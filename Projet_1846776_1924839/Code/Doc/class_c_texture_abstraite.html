@@ -1,0 +1,516 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>TP3v1: Référence de la classe CTextureAbstraite</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Généré par Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+    <li><a href="modules.html"><span>Modules</span></a></li>
+    <li id="current"><a href="annotated.html"><span>Structures&nbsp;de&nbsp;données</span></a></li>
+    <li><a href="files.html"><span>Fichiers</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>Structures&nbsp;de&nbsp;données</span></a></li>
+    <li><a href="hierarchy.html"><span>Hiérarchie&nbsp;des&nbsp;classes</span></a></li>
+    <li><a href="functions.html"><span>Champs&nbsp;de&nbsp;donnée</span></a></li>
+  </ul></div>
+<h1>Référence de la classe CTextureAbstraite</h1><!-- doxytag: class="CTextureAbstraite" -->Cette classe encapsule une texture générique openGL.  
+<a href="#_details">Plus de détails...</a>
+<p>
+<code>#include &lt;TextureAbstraite.h&gt;</code>
+<p>
+Dérivée par <a class="el" href="class_c_texture2_d.html">CTexture2D</a>, et CTextureCubemap.
+<p>
+Graphe d'héritage de CTextureAbstraite:<p><center><img src="class_c_texture_abstraite__inherit__graph.png" border="0" usemap="#_c_texture_abstraite__inherit__map" alt="Inheritance graph"></center>
+<map name="_c_texture_abstraite__inherit__map">
+<area href="class_c_texture2_d.html" shape="rect" coords="24,80,117,107" alt="">
+</map>
+<center><font size="2">[<a href="graph_legend.html">légende</a>]</font></center><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Fonctions membres publiques</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_texture_abstraite.html#165656a8e5514097bdbfaa99595e4611">CTextureAbstraite</a> (char *nomFichier, GLenum cible, bool mipmap=false, bool genTex=true)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">constructeur spécifique  <a href="#165656a8e5514097bdbfaa99595e4611"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_texture_abstraite.html#658b371becd287894108bdd95ad17a1f">CTextureAbstraite</a> (GLenum cible, bool mipmap=false, bool genTex=true)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">constructeur spécifique  <a href="#658b371becd287894108bdd95ad17a1f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_texture_abstraite.html#44eee51ba6b882146ff023b57dd7b91d">~CTextureAbstraite</a> (void)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">destructeur par défaut  <a href="#44eee51ba6b882146ff023b57dd7b91d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_texture_abstraite.html#1bf9e94ea947a9c017921f17ba93dbda">appliquer</a> (uint flagParams, GLenum gl_texture_wrap_s, GLenum gl_texture_wrap_t, GLenum gl_texture_wrap_r, GLenum gl_texture_min_filter, GLenum gl_texture_mag_filter, GLenum gl_texture_min_lod, GLenum gl_texture_max_lod, GLenum gl_texture_base_level, GLenum gl_texture_max_level, GLenum gl_texture_border_color, GLenum gl_texture_priority, bool mipmapping, GLenum uniteTexture=GL_NONE)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">applique la texture dans openGL et spécifie les paramètres de texturage  <a href="#1bf9e94ea947a9c017921f17ba93dbda"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_texture_abstraite.html#6cbb3d3ca0e535bab7460c6f5f03999b">desactiver</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">désactive la texture (sous la cible associée) dans openGL  <a href="#6cbb3d3ca0e535bab7460c6f5f03999b"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Fonctions membres protégées</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_texture_abstraite.html#83e76a2c5459cfabd048de0d505eb404">chargerTexture</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">méthode virtuelle pure de chargement de la texture en mémoire qui devrait toujours être implémentée dans la version surchargée  <a href="#83e76a2c5459cfabd048de0d505eb404"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_texture_abstraite.html#0016b483e00de3b87968dcd53dfb876c">loadBMP</a> (char *nomFichier, Image *image)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">fonction utilitaire servant à charger un BMP en mémoire à partir d'un nom de fichier  <a href="#0016b483e00de3b87968dcd53dfb876c"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Attributs protégés</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_texture_abstraite.html#43c91e8e71a54572368187e1a2ee5abd">nomFichier_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">le nom de fichier de la texture  <a href="#43c91e8e71a54572368187e1a2ee5abd"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GLuint&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_texture_abstraite.html#d98cc06ab58c03b124d3626966838372">nomTexture_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">le nom de texture openGL associé à cette texture  <a href="#d98cc06ab58c03b124d3626966838372"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">const GLenum&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_texture_abstraite.html#71ba86dd3b0112ba55d4cf455e80a7ff">CIBLE_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">la cible openGL associée à cette texture  <a href="#71ba86dd3b0112ba55d4cf455e80a7ff"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GLenum&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_texture_abstraite.html#eb0c64834d3090de22f128b174ffb30d">derniereUniteTexture_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">la dernière unité de texture (GL_TEXTURE0, GL_TEXTURE1, etc...) appliquée à cette texture  <a href="#eb0c64834d3090de22f128b174ffb30d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_texture_abstraite.html#fe63c952aeed675a0237da63fd5f3509">mipmap_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">doit-on mipmaper ?  <a href="#fe63c952aeed675a0237da63fd5f3509"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>Description détaillée</h2>
+Cette classe encapsule une texture générique openGL. 
+<p>
+<dl compact><dt><b>Remarques:</b></dt><dd>la fonction membre virtuelle pure <a class="el" href="class_c_texture_abstraite.html#83e76a2c5459cfabd048de0d505eb404">chargerTexture()</a> doit être implémentée à la saveur de la texture surchargée. Par exemple, une texture HDR surchargera la fonction chargerImage() de façon à charger en mémoire une image HDR. La seule fonction qui est publiée au public, est "appliquerTexture(...) qui permet les trois choses suivantes : 1) Active l'unité de texture désirée (pour le multitexturage) 2) active le texturage sur la cible sélectionnée 3) Lie (bind) la texture à la cible associée</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-01-17 </dd></dl>
+
+<p>
+<hr><h2>Documentation des contructeurs et destructeur</h2>
+<a class="anchor" name="165656a8e5514097bdbfaa99595e4611"></a><!-- doxytag: member="CTextureAbstraite::CTextureAbstraite" ref="165656a8e5514097bdbfaa99595e4611" args="(char *nomFichier, GLenum cible, bool mipmap=false, bool genTex=true)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CTextureAbstraite::CTextureAbstraite           </td>
+          <td>(</td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>nomFichier</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLenum&nbsp;</td>
+          <td class="paramname"> <em>cible</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>mipmap</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>genTex</em> = <code>true</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+constructeur spécifique 
+<p>
+public constructor <a class="el" href="class_c_texture_abstraite.html">CTextureAbstraite</a> <br>
+ Cconstruite une texture abstraite Elle est abstraite afin de permettre le polymorphisme des textures en 2D, ou cubemap, ou etc...<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in,out]</tt>&nbsp;</td><td valign="top"><em>nomFichier</em>&nbsp;</td><td>char * le nom de fichier de la texture </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>cible</em>&nbsp;</td><td>GLenum la cible openGL associée à la texture</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-02-20 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="658b371becd287894108bdd95ad17a1f"></a><!-- doxytag: member="CTextureAbstraite::CTextureAbstraite" ref="658b371becd287894108bdd95ad17a1f" args="(GLenum cible, bool mipmap=false, bool genTex=true)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CTextureAbstraite::CTextureAbstraite           </td>
+          <td>(</td>
+          <td class="paramtype">GLenum&nbsp;</td>
+          <td class="paramname"> <em>cible</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>mipmap</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>genTex</em> = <code>true</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+constructeur spécifique 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="44eee51ba6b882146ff023b57dd7b91d"></a><!-- doxytag: member="CTextureAbstraite::~CTextureAbstraite" ref="44eee51ba6b882146ff023b57dd7b91d" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CTextureAbstraite::~CTextureAbstraite           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+destructeur par défaut 
+<p>
+public destructor ~CTextureAbstraite <br>
+ Destructeur par défaut d'une texture générique. Libère la mémoire de texture<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-02-20 </dd></dl>
+
+</div>
+</div><p>
+<hr><h2>Documentation des fonctions membres</h2>
+<a class="anchor" name="1bf9e94ea947a9c017921f17ba93dbda"></a><!-- doxytag: member="CTextureAbstraite::appliquer" ref="1bf9e94ea947a9c017921f17ba93dbda" args="(uint flagParams, GLenum gl_texture_wrap_s, GLenum gl_texture_wrap_t, GLenum gl_texture_wrap_r, GLenum gl_texture_min_filter, GLenum gl_texture_mag_filter, GLenum gl_texture_min_lod, GLenum gl_texture_max_lod, GLenum gl_texture_base_level, GLenum gl_texture_max_level, GLenum gl_texture_border_color, GLenum gl_texture_priority, bool mipmapping, GLenum uniteTexture=GL_NONE)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CTextureAbstraite::appliquer           </td>
+          <td>(</td>
+          <td class="paramtype">uint&nbsp;</td>
+          <td class="paramname"> <em>flagParams</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLenum&nbsp;</td>
+          <td class="paramname"> <em>gl_texture_wrap_s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLenum&nbsp;</td>
+          <td class="paramname"> <em>gl_texture_wrap_t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLenum&nbsp;</td>
+          <td class="paramname"> <em>gl_texture_wrap_r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLenum&nbsp;</td>
+          <td class="paramname"> <em>gl_texture_min_filter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLenum&nbsp;</td>
+          <td class="paramname"> <em>gl_texture_mag_filter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLenum&nbsp;</td>
+          <td class="paramname"> <em>gl_texture_min_lod</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLenum&nbsp;</td>
+          <td class="paramname"> <em>gl_texture_max_lod</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLenum&nbsp;</td>
+          <td class="paramname"> <em>gl_texture_base_level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLenum&nbsp;</td>
+          <td class="paramname"> <em>gl_texture_max_level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLenum&nbsp;</td>
+          <td class="paramname"> <em>gl_texture_border_color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLenum&nbsp;</td>
+          <td class="paramname"> <em>gl_texture_priority</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>mipmapping</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLenum&nbsp;</td>
+          <td class="paramname"> <em>uniteTexture</em> = <code>GL_NONE</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+applique la texture dans openGL et spécifie les paramètres de texturage 
+<p>
+public appliquer <br>
+ Applique la texture au niveau d'openGL<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>flagParams</em>&nbsp;</td><td>uint les différents paramètres à spécifier. Voir le haut du fichier <a class="el" href="_texture_abstraite_8h.html">textureAbstraite.h</a> pour les différents tag à insérer ici, séparés par des ou " | ". </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>gl_texture_wrap_s</em>&nbsp;</td><td>GLenum le wrap_s de la texture, si spéficié dans le flag </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>gl_texture_wrap_t</em>&nbsp;</td><td>GLenum le wrap_t de la texture, si spéficié dans le flag </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>gl_texture_wrap_r</em>&nbsp;</td><td>GLenum le wrap_r de la texture, si spéficié dans le flag </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>gl_texture_min_filter</em>&nbsp;</td><td>GLenum le min_filter de la texture, si spéficié dans le flag </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>gl_texture_mag_filter</em>&nbsp;</td><td>GLenum le mag_filter de la texture, si spéficié dans le flag </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>gl_texture_min_lod</em>&nbsp;</td><td>GLenum le min_lod de la texture, si spéficié dans le flag </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>gl_texture_max_lod</em>&nbsp;</td><td>GLenum le max_lod de la texture, si spéficié dans le flag </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>gl_texture_base_level</em>&nbsp;</td><td>GLenum le base_level de la texture, si spéficié dans le flag </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>gl_texture_max_level</em>&nbsp;</td><td>GLenum le max_level de la texture, si spéficié dans le flag </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>gl_texture_border_color</em>&nbsp;</td><td>GLenum le border_color de la texture, si spéficié dans le flag </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>gl_texture_priority</em>&nbsp;</td><td>GLenum le priority de la texture, si spéficié dans le flag </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>mipmapping</em>&nbsp;</td><td>bool indique si l'on veut activer le mipmapping ou non </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>uniteTexture</em>&nbsp;</td><td>GLenum [=0] indique quelle unité de texture sera associée. Si aucune -&gt; passer GL_NONE</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-02-20 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="83e76a2c5459cfabd048de0d505eb404"></a><!-- doxytag: member="CTextureAbstraite::chargerTexture" ref="83e76a2c5459cfabd048de0d505eb404" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CTextureAbstraite::chargerTexture           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [protected, pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+méthode virtuelle pure de chargement de la texture en mémoire qui devrait toujours être implémentée dans la version surchargée 
+<p>
+protected pure virtual chargerTexture <br>
+ Fonction virtuelle PURE servant d'interface au chargement de textures dans les versions spécialisées. Ne devrait JAMAIS être implémentée.<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-02-20 </dd></dl>
+
+<p>
+Implémenté dans <a class="el" href="class_c_texture2_d.html#b6ea3e1085e83f5d7aa03e01bc2c6b72">CTexture2D</a>.
+</div>
+</div><p>
+<a class="anchor" name="6cbb3d3ca0e535bab7460c6f5f03999b"></a><!-- doxytag: member="CTextureAbstraite::desactiver" ref="6cbb3d3ca0e535bab7460c6f5f03999b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CTextureAbstraite::desactiver           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+désactive la texture (sous la cible associée) dans openGL 
+<p>
+public desactiver <br>
+ Désactive le texturage sur la cible en cours. Très important de désactiver le texturage entre les différents objets openGL spécifiés, car deux cibles différentes activées simultanémant donnent lieu à des bugs bizarres en openGL.<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-02-20 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="0016b483e00de3b87968dcd53dfb876c"></a><!-- doxytag: member="CTextureAbstraite::loadBMP" ref="0016b483e00de3b87968dcd53dfb876c" args="(char *nomFichier, Image *image)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CTextureAbstraite::loadBMP           </td>
+          <td>(</td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>nomFichier</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Image *&nbsp;</td>
+          <td class="paramname"> <em>image</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+fonction utilitaire servant à charger un BMP en mémoire à partir d'un nom de fichier 
+<p>
+protected loadBMP <br>
+ Fonction utilitaire servant à charger en mémoire un BMP<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in,out]</tt>&nbsp;</td><td valign="top"><em>nomFichier</em>&nbsp;</td><td>char * le nom de fichier de la texture </td></tr>
+    <tr><td valign="top"><tt>[in,out]</tt>&nbsp;</td><td valign="top"><em>image</em>&nbsp;</td><td>Image * une variable de type Image qui recueillera les données</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>int &lt;TODO: insérer une valeur de retour ici&gt;</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-02-20 </dd></dl>
+
+</div>
+</div><p>
+<hr><h2>Documentation des champs</h2>
+<a class="anchor" name="71ba86dd3b0112ba55d4cf455e80a7ff"></a><!-- doxytag: member="CTextureAbstraite::CIBLE_" ref="71ba86dd3b0112ba55d4cf455e80a7ff" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const GLenum <a class="el" href="class_c_texture_abstraite.html#71ba86dd3b0112ba55d4cf455e80a7ff">CTextureAbstraite::CIBLE_</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+la cible openGL associée à cette texture 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="eb0c64834d3090de22f128b174ffb30d"></a><!-- doxytag: member="CTextureAbstraite::derniereUniteTexture_" ref="eb0c64834d3090de22f128b174ffb30d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLenum <a class="el" href="class_c_texture_abstraite.html#eb0c64834d3090de22f128b174ffb30d">CTextureAbstraite::derniereUniteTexture_</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+la dernière unité de texture (GL_TEXTURE0, GL_TEXTURE1, etc...) appliquée à cette texture 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="fe63c952aeed675a0237da63fd5f3509"></a><!-- doxytag: member="CTextureAbstraite::mipmap_" ref="fe63c952aeed675a0237da63fd5f3509" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_c_texture_abstraite.html#fe63c952aeed675a0237da63fd5f3509">CTextureAbstraite::mipmap_</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+doit-on mipmaper ? 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="43c91e8e71a54572368187e1a2ee5abd"></a><!-- doxytag: member="CTextureAbstraite::nomFichier_" ref="43c91e8e71a54572368187e1a2ee5abd" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* <a class="el" href="class_c_texture_abstraite.html#43c91e8e71a54572368187e1a2ee5abd">CTextureAbstraite::nomFichier_</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+le nom de fichier de la texture 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="d98cc06ab58c03b124d3626966838372"></a><!-- doxytag: member="CTextureAbstraite::nomTexture_" ref="d98cc06ab58c03b124d3626966838372" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint <a class="el" href="class_c_texture_abstraite.html#d98cc06ab58c03b124d3626966838372">CTextureAbstraite::nomTexture_</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+le nom de texture openGL associé à cette texture 
+<p>
+
+</div>
+</div><p>
+<hr>La documentation de cette classe a été générée à partir des fichiers suivants:<ul>
+<li><a class="el" href="_texture_abstraite_8h.html">TextureAbstraite.h</a><li>TextureAbstraite.cpp</ul>
+<hr size="1"><address style="align: right;"><small>Généré le Wed Sep 17 08:56:45 2008 pour TP3v1 par&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>

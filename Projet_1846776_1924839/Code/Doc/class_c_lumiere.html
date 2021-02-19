@@ -1,0 +1,1423 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>TP3v1: Référence de la classe CLumiere</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Généré par Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+    <li><a href="modules.html"><span>Modules</span></a></li>
+    <li id="current"><a href="annotated.html"><span>Structures&nbsp;de&nbsp;données</span></a></li>
+    <li><a href="files.html"><span>Fichiers</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>Structures&nbsp;de&nbsp;données</span></a></li>
+    <li><a href="hierarchy.html"><span>Hiérarchie&nbsp;des&nbsp;classes</span></a></li>
+    <li><a href="functions.html"><span>Champs&nbsp;de&nbsp;donnée</span></a></li>
+  </ul></div>
+<h1>Référence de la classe CLumiere</h1><!-- doxytag: class="CLumiere" -->Cette classe encapsule une lumière openGL et permet de l'activer et d'en changer aisément les paramètres.  
+<a href="#_details">Plus de détails...</a>
+<p>
+<code>#include &lt;Lumiere.h&gt;</code>
+<p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Fonctions membres publiques</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#e3df36afca09c36a8b02986bb8c67d53">CLumiere</a> (void)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">constructeur par défaut  <a href="#e3df36afca09c36a8b02986bb8c67d53"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#01e2d087e251047221b0a7adafa96483">CLumiere</a> (GLenum lumKD, GLfloat KAr, GLfloat KAg, GLfloat KAb, GLfloat KDr, GLfloat KDg, GLfloat KDb, GLfloat KSr, GLfloat KSg, GLfloat KSb, GLfloat KEr, GLfloat KEg, GLfloat KEb, GLfloat posX, GLfloat posY, GLfloat posZ, GLfloat posW=1.0, bool estActivee=true, GLfloat spotDirX=0.0, GLfloat spotDirY=0.0, GLfloat spotDirZ=-1.0, GLfloat spotExp=0.0, GLfloat spotCutoff=180.0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">constructeur spécifique  <a href="#01e2d087e251047221b0a7adafa96483"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#691289d65e6c26dc39d11c4cab20b168">~CLumiere</a> (void)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">destructeur par défaut  <a href="#691289d65e6c26dc39d11c4cab20b168"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#451129b22387fdb4dd52ba1894699949">appliquer</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">OPENGL : méthode qui active les paramètres de la lumière si allumée ou la désactive si éteinte.  <a href="#451129b22387fdb4dd52ba1894699949"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#c5d6fb3007a2f5ecef64a8c35dc7f0ad">obtenirKA</a> (GLfloat KA[3]) const </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#f053a567123b04e8d8df613660bdc28f">modifierKA</a> (GLfloat KAr, GLfloat KAg, GLfloat KAb)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">modifie les quatre composantes RGBA de KA  <a href="#f053a567123b04e8d8df613660bdc28f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#143d87835bb55ae2b3cfdfe64df32195">obtenirKD</a> (GLfloat KD[3]) const </td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">obtient les quatre composantes RGBA de KD  <a href="#143d87835bb55ae2b3cfdfe64df32195"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#515b200a7da4127df7f57f84e49a83ca">modifierKD</a> (GLfloat KDr, GLfloat KDg, GLfloat KDb)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">modifie les quatre composantes RGBA de KD  <a href="#515b200a7da4127df7f57f84e49a83ca"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#5058ae949f4595588b6878916f8921a9">obtenirKS</a> (GLfloat KS[3]) const </td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">obtient les quatre composantes RGBA de KS  <a href="#5058ae949f4595588b6878916f8921a9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#4455b37314f30b473e99f4e29357d0c0">modifierKS</a> (GLfloat KSr, GLfloat KSg, GLfloat KSb)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">modifie les quatre composantes RGBA de KS  <a href="#4455b37314f30b473e99f4e29357d0c0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#b0a24fe63f00a210553201240160a8fb">obtenirKE</a> (GLfloat KE[3]) const </td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">obtient les quatre composantes RGBA de KE  <a href="#b0a24fe63f00a210553201240160a8fb"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#c29cb809c278ae251ed738ad2c4215c3">modifierKE</a> (GLfloat KEr, GLfloat KEg, GLfloat KEb)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">modifie les quatre composantes RGBA de KE  <a href="#c29cb809c278ae251ed738ad2c4215c3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#ea110aeccb44df26b2740ba9e0492537">obtenirPos</a> (GLfloat pos[4]) const </td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">obtient la position de la lumière  <a href="#ea110aeccb44df26b2740ba9e0492537"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#e5ac4adb5078f4c674c208a679bbf6ee">modifierPos</a> (GLfloat x, GLfloat y, GLfloat z, GLfloat w=1.0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">modifie la position de la lumière  <a href="#e5ac4adb5078f4c674c208a679bbf6ee"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#0df72e2d4a2b5f415803ba8f1f718733">obtenirSpotDir</a> (GLfloat spotDir[3])</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">obtient la direction de la lumière  <a href="#0df72e2d4a2b5f415803ba8f1f718733"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#19e2a102af21811fb6a92281b02c023d">modifierSpotDir</a> (GLfloat x, GLfloat y, GLfloat z)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">modifie la direction de la lumière  <a href="#19e2a102af21811fb6a92281b02c023d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GLfloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#1adf83df8f1440c55815c9153ca2adaa">obtenirSpotCutOff</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">obtient le spotCutoff  <a href="#1adf83df8f1440c55815c9153ca2adaa"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GLfloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#9df1922dc82391e6b90cadaf7c1b5e3b">obtenirConsAtt</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">obtient le coefficient d'atténuation constante  <a href="#9df1922dc82391e6b90cadaf7c1b5e3b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#d9f3d8b1c0d9414e3c97d4822e90c8b0">modifierConstAtt</a> (GLfloat constAtt)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">modifie le coeffcient d'atténuation constante  <a href="#d9f3d8b1c0d9414e3c97d4822e90c8b0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GLfloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#d8a9cbcdef26c04653a078a656dd6a8e">obtenirLinAtt</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">obtient le coefficient d'atténuation linéaire  <a href="#d8a9cbcdef26c04653a078a656dd6a8e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#015583d48d23c67811e2c61be11e391b">modifierLinAtt</a> (GLfloat linAtt)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">modifie le coeffcient d'atténuation linéaire  <a href="#015583d48d23c67811e2c61be11e391b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GLfloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#377d0586145c5ec35c03280cd127117c">obtenirQuadAtt</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">obtient le coefficient d'atténuation quadratique  <a href="#377d0586145c5ec35c03280cd127117c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#a1caaa97919bade9015fcf47278d2f22">modifierQuadAtt</a> (GLfloat quadAtt)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">modifie le coeffcient d'atténuation quadratique  <a href="#a1caaa97919bade9015fcf47278d2f22"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#b02c27b8da04e2d6723f6886067d5ea0">estAllumee</a> () const </td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">obtient l'état de la lumière (allumée ou éteinte)  <a href="#b02c27b8da04e2d6723f6886067d5ea0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#c0d35fd5bc20d98720c1f8b34b11cede">allumer</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">modifie l'état de la lumière à "allumée"  <a href="#c0d35fd5bc20d98720c1f8b34b11cede"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#381408c6a777a988cb1fb97617c029f7">eteindre</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">modifie l'état de la lumière à "éteinte"  <a href="#381408c6a777a988cb1fb97617c029f7"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Attributs privés</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GLenum&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#981b65f86cc9eb38568458fe3c8326c8">lumKD_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">l'identifiant de la lumière OPENGL associée.  <a href="#981b65f86cc9eb38568458fe3c8326c8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#293e23d934395e40cf699eec5cf42ec5">estAllumee_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">indique si la lumière est allumée (true) ou éteinte (false)  <a href="#293e23d934395e40cf699eec5cf42ec5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GLfloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#245a50eb0fa3f2c625135d9bfae72c8c">KA_</a> [4]</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">composante ambiante [R,G,B,A]  <a href="#245a50eb0fa3f2c625135d9bfae72c8c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GLfloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#693652aff1445c531002c66c1dc7d1f4">KD_</a> [4]</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">composante diffuse [R,G,B,A]  <a href="#693652aff1445c531002c66c1dc7d1f4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GLfloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#18ff61959e10febf0c4ab5635209481a">KS_</a> [4]</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">composante spéculaire [R,G,B,A]  <a href="#18ff61959e10febf0c4ab5635209481a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GLfloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#9beb0689acf14075d75fb0554ed8c4b9">KE_</a> [4]</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">composante émettrice [R,G,B,A]  <a href="#9beb0689acf14075d75fb0554ed8c4b9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GLfloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#a51d635fba8a0bc7fcbaf6778778eeef">pos_</a> [4]</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">position de la lumière [X,Y,Z,W]  <a href="#a51d635fba8a0bc7fcbaf6778778eeef"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GLfloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#4c30b81eb02ad07641a15e147734ca49">spotDir_</a> [3]</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">la direction du "spot" [X,Y,Z] (le cas échéant, sinon = (0,0,0)  <a href="#4c30b81eb02ad07641a15e147734ca49"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GLfloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#198ddbd73edf26e19ccac7024665fdb7">spotExp_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">l'exposant du faisceau du "spot" (le cas échéant, sinon = 1.0)  <a href="#198ddbd73edf26e19ccac7024665fdb7"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GLfloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#644fc7875ce328c3ed467e383513dd15">spotCutoff_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">l'angle de coupure du "spot" (le cas échéant, sinon = 180)  <a href="#644fc7875ce328c3ed467e383513dd15"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GLfloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#034b9fdc1f6cd6118424d8570687c7fa">constAtt_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">le coefficient d'atténuantion constante (n'est PAS spécifiable à la construction)  <a href="#034b9fdc1f6cd6118424d8570687c7fa"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GLfloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#04d494a06d3dd964fb8b5782fd30d108">linAtt_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">le coefficient d'atténuation linéaire (n'est PAS spécifiable à la construction)  <a href="#04d494a06d3dd964fb8b5782fd30d108"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GLfloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_lumiere.html#7e0e60a86be83f2d5ba26bb197fb4df3">quadAtt_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">le coefficient d'atténuation quadratique (n'est PAS spécifiable à la construction)  <a href="#7e0e60a86be83f2d5ba26bb197fb4df3"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>Description détaillée</h2>
+Cette classe encapsule une lumière openGL et permet de l'activer et d'en changer aisément les paramètres. 
+<p>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-11 </dd></dl>
+
+<p>
+<hr><h2>Documentation des contructeurs et destructeur</h2>
+<a class="anchor" name="e3df36afca09c36a8b02986bb8c67d53"></a><!-- doxytag: member="CLumiere::CLumiere" ref="e3df36afca09c36a8b02986bb8c67d53" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CLumiere::CLumiere           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+constructeur par défaut 
+<p>
+public overloaded constructor <a class="el" href="class_c_lumiere.html">CLumiere</a> <br>
+<p>
+Crée une lumière openGL ponctuelle orientée (w = 1.0), centrée à (0,0,0) et d'intensité totale I = 1.0 pour toutes les composantes.<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-11 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="01e2d087e251047221b0a7adafa96483"></a><!-- doxytag: member="CLumiere::CLumiere" ref="01e2d087e251047221b0a7adafa96483" args="(GLenum lumKD, GLfloat KAr, GLfloat KAg, GLfloat KAb, GLfloat KDr, GLfloat KDg, GLfloat KDb, GLfloat KSr, GLfloat KSg, GLfloat KSb, GLfloat KEr, GLfloat KEg, GLfloat KEb, GLfloat posX, GLfloat posY, GLfloat posZ, GLfloat posW=1.0, bool estActivee=true, GLfloat spotDirX=0.0, GLfloat spotDirY=0.0, GLfloat spotDirZ=-1.0, GLfloat spotExp=0.0, GLfloat spotCutoff=180.0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CLumiere::CLumiere           </td>
+          <td>(</td>
+          <td class="paramtype">GLenum&nbsp;</td>
+          <td class="paramname"> <em>lumKD</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KAr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KAg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KAb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KDr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KDg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KDb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KSr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KSg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KSb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KEr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KEg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KEb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>posX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>posY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>posZ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>posW</em> = <code>1.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>estActivee</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>spotDirX</em> = <code>0.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>spotDirY</em> = <code>0.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>spotDirZ</em> = <code>-1.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>spotExp</em> = <code>0.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>spotCutoff</em> = <code>180.0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+constructeur spécifique 
+<p>
+public overloaded constructor <a class="el" href="class_c_lumiere.html">CLumiere</a> <br>
+<p>
+Contructeur d'une lumière spécifique.<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>lumKD</em>&nbsp;</td><td>GLenum l'Identifiant openGL de la lumière associée. </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KAr</em>&nbsp;</td><td>composante ambiante (rouge) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KAg</em>&nbsp;</td><td>composante ambiante (verte) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KAb</em>&nbsp;</td><td>composante ambiante (bleue) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KDr</em>&nbsp;</td><td>composante diffuse (rouge) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KDg</em>&nbsp;</td><td>composante diffuse (verte) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KDb</em>&nbsp;</td><td>composante diffuse (bleue) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KSr</em>&nbsp;</td><td>composante spéculaire (rouge) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KSg</em>&nbsp;</td><td>composante spéculaire (verte) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KSb</em>&nbsp;</td><td>composante spéculaire (bleue) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KEr</em>&nbsp;</td><td>composante émettrice (rouge) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KEg</em>&nbsp;</td><td>composante émettrice (verte) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KEb</em>&nbsp;</td><td>composante émettrice (bleue) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>posX</em>&nbsp;</td><td>position de la lumière en X </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>posY</em>&nbsp;</td><td>position de la lumière en Y </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>posZ</em>&nbsp;</td><td>position de la lumière en Z </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>posW</em>&nbsp;</td><td>= 1,000000 [=1,000000] position de la lumière en W (directionnelle = 0.0, orientée = 1.0) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>estActivee</em>&nbsp;</td><td>indique si la lumière s'active (s'allume) dès la construction </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>spotDirX</em>&nbsp;</td><td>[0.0] la direction en X du "spot" le cas échéant </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>spotDirY</em>&nbsp;</td><td>[0.0] la direction en Y du "spot" le cas échéant </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>spotDirZ</em>&nbsp;</td><td>[-1.0] la direction en Z du "spot" le cas échéant </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>spotExp</em>&nbsp;</td><td>[0.0] l'exposant du "spot" le cas échéant </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>spotCutoff</em>&nbsp;</td><td>[180.0] l'angle de coupure du "spot" le cas échéant</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-11 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="691289d65e6c26dc39d11c4cab20b168"></a><!-- doxytag: member="CLumiere::~CLumiere" ref="691289d65e6c26dc39d11c4cab20b168" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CLumiere::~CLumiere           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+destructeur par défaut 
+<p>
+
+</div>
+</div><p>
+<hr><h2>Documentation des fonctions membres</h2>
+<a class="anchor" name="c0d35fd5bc20d98720c1f8b34b11cede"></a><!-- doxytag: member="CLumiere::allumer" ref="c0d35fd5bc20d98720c1f8b34b11cede" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CLumiere::allumer           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+modifie l'état de la lumière à "allumée" 
+<p>
+inline public allumer <br>
+<p>
+Modifie l'état de la lumière à "allumée"<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-11 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="451129b22387fdb4dd52ba1894699949"></a><!-- doxytag: member="CLumiere::appliquer" ref="451129b22387fdb4dd52ba1894699949" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CLumiere::appliquer           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+OPENGL : méthode qui active les paramètres de la lumière si allumée ou la désactive si éteinte. 
+<p>
+public appliquer <br>
+<p>
+Cette méthode active et désactive l'illumination openGL pour cette lumière en regard du membre privé estActive_.<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-11 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="b02c27b8da04e2d6723f6886067d5ea0"></a><!-- doxytag: member="CLumiere::estAllumee" ref="b02c27b8da04e2d6723f6886067d5ea0" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CLumiere::estAllumee           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+obtient l'état de la lumière (allumée ou éteinte) 
+<p>
+inline public constant estAllumee <br>
+<p>
+Interroge l'état de la lumière (allumée ou éteinte)<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>bool : l'état de la lumière (true = allumée, false = éteinte).</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-11 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="381408c6a777a988cb1fb97617c029f7"></a><!-- doxytag: member="CLumiere::eteindre" ref="381408c6a777a988cb1fb97617c029f7" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CLumiere::eteindre           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+modifie l'état de la lumière à "éteinte" 
+<p>
+inline public eteindre <br>
+<p>
+Modifie l'état de la lumière à "éteinte"<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-11 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d9f3d8b1c0d9414e3c97d4822e90c8b0"></a><!-- doxytag: member="CLumiere::modifierConstAtt" ref="d9f3d8b1c0d9414e3c97d4822e90c8b0" args="(GLfloat constAtt)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CLumiere::modifierConstAtt           </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>constAtt</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+modifie le coeffcient d'atténuation constante 
+<p>
+global inline public modifierConstAtt <br>
+<p>
+modifie le coeffcient d'atténuation constante<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>constAtt</em>&nbsp;</td><td>GLfloat : le coeffcient d'atténuation constante</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-13 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f053a567123b04e8d8df613660bdc28f"></a><!-- doxytag: member="CLumiere::modifierKA" ref="f053a567123b04e8d8df613660bdc28f" args="(GLfloat KAr, GLfloat KAg, GLfloat KAb)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CLumiere::modifierKA           </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KAr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KAg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KAb</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+modifie les quatre composantes RGBA de KA 
+<p>
+inline public modifierKA <br>
+<p>
+modifie les quatre composantes RGBA de KA<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KAr</em>&nbsp;</td><td>GLfloat composante Rouge (peut être NO_OP pour garder ancienne valeur). </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KAg</em>&nbsp;</td><td>GLfloat composante Verte (peut être NO_OP pour garder ancienne valeur). </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KAb</em>&nbsp;</td><td>GLfloat composante Bleue (peut être NO_OP pour garder ancienne valeur).</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Remarques:</b></dt><dd>les arguments peuvent être mis à NO_OP à l'appel pour empêcher qu'ils soient modifiés. </dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-11 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="515b200a7da4127df7f57f84e49a83ca"></a><!-- doxytag: member="CLumiere::modifierKD" ref="515b200a7da4127df7f57f84e49a83ca" args="(GLfloat KDr, GLfloat KDg, GLfloat KDb)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CLumiere::modifierKD           </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KDr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KDg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KDb</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+modifie les quatre composantes RGBA de KD 
+<p>
+inline public modifierKD <br>
+<p>
+modifie les quatre composantes RGBA de KD<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KDr</em>&nbsp;</td><td>GLfloat composante Rouge (peut être NO_OP pour garder ancienne valeur). </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KDg</em>&nbsp;</td><td>GLfloat composante Verte (peut être NO_OP pour garder ancienne valeur). </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KDb</em>&nbsp;</td><td>GLfloat composante Bleue (peut être NO_OP pour garder ancienne valeur).</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Remarques:</b></dt><dd>les arguments peuvent être mis à NO_OP à l'appel pour empêcher qu'ils soient modifiés. </dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-11 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c29cb809c278ae251ed738ad2c4215c3"></a><!-- doxytag: member="CLumiere::modifierKE" ref="c29cb809c278ae251ed738ad2c4215c3" args="(GLfloat KEr, GLfloat KEg, GLfloat KEb)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CLumiere::modifierKE           </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KEr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KEg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KEb</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+modifie les quatre composantes RGBA de KE 
+<p>
+inline public modifierKE <br>
+ modifie les quatre composantes RGBA de KE<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KEr</em>&nbsp;</td><td>GLfloat composante Rouge (peut être NO_OP pour garder ancienne valeur). </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KEg</em>&nbsp;</td><td>GLfloat composante Verte (peut être NO_OP pour garder ancienne valeur). </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KEb</em>&nbsp;</td><td>GLfloat composante Bleue (peut être NO_OP pour garder ancienne valeur).</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Remarques:</b></dt><dd>les arguments peuvent être mis à NO_OP à l'appel pour empêcher qu'ils soient modifiés. </dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-11 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="4455b37314f30b473e99f4e29357d0c0"></a><!-- doxytag: member="CLumiere::modifierKS" ref="4455b37314f30b473e99f4e29357d0c0" args="(GLfloat KSr, GLfloat KSg, GLfloat KSb)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CLumiere::modifierKS           </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KSr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KSg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KSb</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+modifie les quatre composantes RGBA de KS 
+<p>
+inline public modifierKS <br>
+<p>
+modifie les quatre composantes RGBA de KS<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KSr</em>&nbsp;</td><td>GLfloat composante Rouge (peut être NO_OP pour garder ancienne valeur). </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KSg</em>&nbsp;</td><td>GLfloat composante Verte (peut être NO_OP pour garder ancienne valeur). </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KSb</em>&nbsp;</td><td>GLfloat composante Bleue (peut être NO_OP pour garder ancienne valeur).</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Remarques:</b></dt><dd>les arguments peuvent être mis à NO_OP à l'appel pour empêcher qu'ils soient modifiés. </dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-11 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="015583d48d23c67811e2c61be11e391b"></a><!-- doxytag: member="CLumiere::modifierLinAtt" ref="015583d48d23c67811e2c61be11e391b" args="(GLfloat linAtt)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CLumiere::modifierLinAtt           </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>linAtt</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+modifie le coeffcient d'atténuation linéaire 
+<p>
+global inline public modifierLinAtt <br>
+<p>
+modifie le coeffcient d'atténuation linéaire<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>linAtt</em>&nbsp;</td><td>GLfloat : le coeffcient d'atténuation linéaire</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-13 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e5ac4adb5078f4c674c208a679bbf6ee"></a><!-- doxytag: member="CLumiere::modifierPos" ref="e5ac4adb5078f4c674c208a679bbf6ee" args="(GLfloat x, GLfloat y, GLfloat z, GLfloat w=1.0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CLumiere::modifierPos           </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>z</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>w</em> = <code>1.0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+modifie la position de la lumière 
+<p>
+inline public modifierPos <br>
+ Modifie la position de la lumière<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>x</em>&nbsp;</td><td>GLfloat la composante en x </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>y</em>&nbsp;</td><td>GLfloat la composante en y </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>z</em>&nbsp;</td><td>GLfloat la composante en z </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>w</em>&nbsp;</td><td>GLfloat [=1.000000] la composante en w (pour les lumières directionnelles)</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-03-11 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a1caaa97919bade9015fcf47278d2f22"></a><!-- doxytag: member="CLumiere::modifierQuadAtt" ref="a1caaa97919bade9015fcf47278d2f22" args="(GLfloat quadAtt)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CLumiere::modifierQuadAtt           </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>quadAtt</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+modifie le coeffcient d'atténuation quadratique 
+<p>
+global inline public modifierQuadAtt <br>
+<p>
+modifie le coeffcient d'atténuation quadratique<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>quadAtt</em>&nbsp;</td><td>GLfloat : le coeffcient d'atténuation quadratique</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-13 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="19e2a102af21811fb6a92281b02c023d"></a><!-- doxytag: member="CLumiere::modifierSpotDir" ref="19e2a102af21811fb6a92281b02c023d" args="(GLfloat x, GLfloat y, GLfloat z)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CLumiere::modifierSpotDir           </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+modifie la direction de la lumière 
+<p>
+inline public modifierSpotDir <br>
+ Modifie la direction d'illumination de la lumière (pour les spots)<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>x</em>&nbsp;</td><td>GLfloat la composante en x </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>y</em>&nbsp;</td><td>GLfloat la composante en y </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>z</em>&nbsp;</td><td>GLfloat la composante en z</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-03-11 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9df1922dc82391e6b90cadaf7c1b5e3b"></a><!-- doxytag: member="CLumiere::obtenirConsAtt" ref="9df1922dc82391e6b90cadaf7c1b5e3b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLfloat CLumiere::obtenirConsAtt           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+obtient le coefficient d'atténuation constante 
+<p>
+global inline public obtenirConsAtt <br>
+<p>
+obtient le coefficient d'atténuation constante<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>GLfloat : le coefficient d'atténuation constante</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-13 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c5d6fb3007a2f5ecef64a8c35dc7f0ad"></a><!-- doxytag: member="CLumiere::obtenirKA" ref="c5d6fb3007a2f5ecef64a8c35dc7f0ad" args="(GLfloat KA[3]) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CLumiere::obtenirKA           </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KA</em>[3]          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+obtient les quatre composantes RGBA de KA 
+</div>
+</div><p>
+<a class="anchor" name="143d87835bb55ae2b3cfdfe64df32195"></a><!-- doxytag: member="CLumiere::obtenirKD" ref="143d87835bb55ae2b3cfdfe64df32195" args="(GLfloat KD[3]) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CLumiere::obtenirKD           </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KD</em>[3]          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+obtient les quatre composantes RGBA de KD 
+<p>
+inline public constant obtenirKD <br>
+<p>
+obtient les quatre composantes RGBA de KD<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KD[3]</em>&nbsp;</td><td>les trois composantes RGB de KD </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-11 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="b0a24fe63f00a210553201240160a8fb"></a><!-- doxytag: member="CLumiere::obtenirKE" ref="b0a24fe63f00a210553201240160a8fb" args="(GLfloat KE[3]) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CLumiere::obtenirKE           </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KE</em>[3]          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+obtient les quatre composantes RGBA de KE 
+<p>
+inline public constant obtenirKE <br>
+<p>
+obtient les quatre composantes RGBA de KE<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KE[3]</em>&nbsp;</td><td>les trois composantes RGB de KE </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-11 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="5058ae949f4595588b6878916f8921a9"></a><!-- doxytag: member="CLumiere::obtenirKS" ref="5058ae949f4595588b6878916f8921a9" args="(GLfloat KS[3]) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CLumiere::obtenirKS           </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KS</em>[3]          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+obtient les quatre composantes RGBA de KS 
+<p>
+inline public constant obtenirKS <br>
+<p>
+obtient les quatre composantes RGBA de KA<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KS[3]</em>&nbsp;</td><td>les trois composantes RGB de KS </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-11 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d8a9cbcdef26c04653a078a656dd6a8e"></a><!-- doxytag: member="CLumiere::obtenirLinAtt" ref="d8a9cbcdef26c04653a078a656dd6a8e" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLfloat CLumiere::obtenirLinAtt           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+obtient le coefficient d'atténuation linéaire 
+<p>
+global inline public obtenirLinAtt <br>
+<p>
+obtient le coefficient d'atténuation linéaire<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>GLfloat : le coefficient d'atténuation linéaire</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-13 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="ea110aeccb44df26b2740ba9e0492537"></a><!-- doxytag: member="CLumiere::obtenirPos" ref="ea110aeccb44df26b2740ba9e0492537" args="(GLfloat pos[4]) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CLumiere::obtenirPos           </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>pos</em>[4]          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+obtient la position de la lumière 
+<p>
+inline public constant obtenirPos <br>
+<p>
+obtient les quatre composantes de la position de la lumière<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>pos[3]</em>&nbsp;</td><td>les quatre composantes euclidiennes de la position </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-03-31 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="377d0586145c5ec35c03280cd127117c"></a><!-- doxytag: member="CLumiere::obtenirQuadAtt" ref="377d0586145c5ec35c03280cd127117c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLfloat CLumiere::obtenirQuadAtt           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+obtient le coefficient d'atténuation quadratique 
+<p>
+global inline public obtenirQuadAtt <br>
+<p>
+obtient le coefficient d'atténuation quadratique<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>GLfloat : le coefficient d'atténuation quadratique</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-13 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="1adf83df8f1440c55815c9153ca2adaa"></a><!-- doxytag: member="CLumiere::obtenirSpotCutOff" ref="1adf83df8f1440c55815c9153ca2adaa" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLfloat CLumiere::obtenirSpotCutOff           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+obtient le spotCutoff 
+<p>
+global inline public obtenirSpotCutOff <br>
+<p>
+obtient le spotCutOff<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>GLfloat : le spotCutOff</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-03-31 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="0df72e2d4a2b5f415803ba8f1f718733"></a><!-- doxytag: member="CLumiere::obtenirSpotDir" ref="0df72e2d4a2b5f415803ba8f1f718733" args="(GLfloat spotDir[3])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CLumiere::obtenirSpotDir           </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>spotDir</em>[3]          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+obtient la direction de la lumière 
+<p>
+inline public constant obtenirSpotDir <br>
+<p>
+obtient les trois composantes de la direction de la lumière<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>spotDir[3]</em>&nbsp;</td><td>les trois composantes euclidiennes de la direction </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-03-31 </dd></dl>
+
+</div>
+</div><p>
+<hr><h2>Documentation des champs</h2>
+<a class="anchor" name="034b9fdc1f6cd6118424d8570687c7fa"></a><!-- doxytag: member="CLumiere::constAtt_" ref="034b9fdc1f6cd6118424d8570687c7fa" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLfloat <a class="el" href="class_c_lumiere.html#034b9fdc1f6cd6118424d8570687c7fa">CLumiere::constAtt_</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+le coefficient d'atténuantion constante (n'est PAS spécifiable à la construction) 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="293e23d934395e40cf699eec5cf42ec5"></a><!-- doxytag: member="CLumiere::estAllumee_" ref="293e23d934395e40cf699eec5cf42ec5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_c_lumiere.html#293e23d934395e40cf699eec5cf42ec5">CLumiere::estAllumee_</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+indique si la lumière est allumée (true) ou éteinte (false) 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="245a50eb0fa3f2c625135d9bfae72c8c"></a><!-- doxytag: member="CLumiere::KA_" ref="245a50eb0fa3f2c625135d9bfae72c8c" args="[4]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLfloat <a class="el" href="class_c_lumiere.html#245a50eb0fa3f2c625135d9bfae72c8c">CLumiere::KA_</a>[4]<code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+composante ambiante [R,G,B,A] 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="693652aff1445c531002c66c1dc7d1f4"></a><!-- doxytag: member="CLumiere::KD_" ref="693652aff1445c531002c66c1dc7d1f4" args="[4]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLfloat <a class="el" href="class_c_lumiere.html#693652aff1445c531002c66c1dc7d1f4">CLumiere::KD_</a>[4]<code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+composante diffuse [R,G,B,A] 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="9beb0689acf14075d75fb0554ed8c4b9"></a><!-- doxytag: member="CLumiere::KE_" ref="9beb0689acf14075d75fb0554ed8c4b9" args="[4]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLfloat <a class="el" href="class_c_lumiere.html#9beb0689acf14075d75fb0554ed8c4b9">CLumiere::KE_</a>[4]<code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+composante émettrice [R,G,B,A] 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="18ff61959e10febf0c4ab5635209481a"></a><!-- doxytag: member="CLumiere::KS_" ref="18ff61959e10febf0c4ab5635209481a" args="[4]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLfloat <a class="el" href="class_c_lumiere.html#18ff61959e10febf0c4ab5635209481a">CLumiere::KS_</a>[4]<code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+composante spéculaire [R,G,B,A] 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="04d494a06d3dd964fb8b5782fd30d108"></a><!-- doxytag: member="CLumiere::linAtt_" ref="04d494a06d3dd964fb8b5782fd30d108" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLfloat <a class="el" href="class_c_lumiere.html#04d494a06d3dd964fb8b5782fd30d108">CLumiere::linAtt_</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+le coefficient d'atténuation linéaire (n'est PAS spécifiable à la construction) 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="981b65f86cc9eb38568458fe3c8326c8"></a><!-- doxytag: member="CLumiere::lumKD_" ref="981b65f86cc9eb38568458fe3c8326c8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLenum <a class="el" href="class_c_lumiere.html#981b65f86cc9eb38568458fe3c8326c8">CLumiere::lumKD_</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+l'identifiant de la lumière OPENGL associée. 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="a51d635fba8a0bc7fcbaf6778778eeef"></a><!-- doxytag: member="CLumiere::pos_" ref="a51d635fba8a0bc7fcbaf6778778eeef" args="[4]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLfloat <a class="el" href="class_c_lumiere.html#a51d635fba8a0bc7fcbaf6778778eeef">CLumiere::pos_</a>[4]<code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+position de la lumière [X,Y,Z,W] 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="7e0e60a86be83f2d5ba26bb197fb4df3"></a><!-- doxytag: member="CLumiere::quadAtt_" ref="7e0e60a86be83f2d5ba26bb197fb4df3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLfloat <a class="el" href="class_c_lumiere.html#7e0e60a86be83f2d5ba26bb197fb4df3">CLumiere::quadAtt_</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+le coefficient d'atténuation quadratique (n'est PAS spécifiable à la construction) 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="644fc7875ce328c3ed467e383513dd15"></a><!-- doxytag: member="CLumiere::spotCutoff_" ref="644fc7875ce328c3ed467e383513dd15" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLfloat <a class="el" href="class_c_lumiere.html#644fc7875ce328c3ed467e383513dd15">CLumiere::spotCutoff_</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+l'angle de coupure du "spot" (le cas échéant, sinon = 180) 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="4c30b81eb02ad07641a15e147734ca49"></a><!-- doxytag: member="CLumiere::spotDir_" ref="4c30b81eb02ad07641a15e147734ca49" args="[3]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLfloat <a class="el" href="class_c_lumiere.html#4c30b81eb02ad07641a15e147734ca49">CLumiere::spotDir_</a>[3]<code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+la direction du "spot" [X,Y,Z] (le cas échéant, sinon = (0,0,0) 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="198ddbd73edf26e19ccac7024665fdb7"></a><!-- doxytag: member="CLumiere::spotExp_" ref="198ddbd73edf26e19ccac7024665fdb7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLfloat <a class="el" href="class_c_lumiere.html#198ddbd73edf26e19ccac7024665fdb7">CLumiere::spotExp_</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+l'exposant du faisceau du "spot" (le cas échéant, sinon = 1.0) 
+<p>
+
+</div>
+</div><p>
+<hr>La documentation de cette classe a été générée à partir des fichiers suivants:<ul>
+<li><a class="el" href="_lumiere_8h.html">Lumiere.h</a><li><a class="el" href="_lumiere_8cpp.html">Lumiere.cpp</a></ul>
+<hr size="1"><address style="align: right;"><small>Généré le Wed Sep 17 08:56:44 2008 pour TP3v1 par&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>

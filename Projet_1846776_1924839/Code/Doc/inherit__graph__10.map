@@ -1,0 +1,3 @@
+base referer
+rect $class_singleton.html 6,5 136,32
+rect $class_c_cst.html 186,5 236,32

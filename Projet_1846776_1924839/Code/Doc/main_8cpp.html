@@ -1,0 +1,394 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>TP3v1: Référence du fichier main.cpp</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Généré par Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+    <li><a href="modules.html"><span>Modules</span></a></li>
+    <li><a href="annotated.html"><span>Structures&nbsp;de&nbsp;données</span></a></li>
+    <li id="current"><a href="files.html"><span>Fichiers</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="files.html"><span>Liste&nbsp;des&nbsp;fichiers</span></a></li>
+    <li><a href="globals.html"><span>Portée&nbsp;globale</span></a></li>
+  </ul></div>
+<h1>Référence du fichier main.cpp</h1>le main du programme ProjetNuanceur pour le cours INF8702 de Polytechnique <a href="#_details">Plus de détails...</a>
+<p>
+<code>#include &lt;stdlib.h&gt;</code><br>
+<code>#include &lt;stdio.h&gt;</code><br>
+<code>#include &lt;math.h&gt;</code><br>
+<code>#include &lt;vector&gt;</code><br>
+<code>#include &lt;GL/glew.h&gt;</code><br>
+<code>#include &lt;GL/glut.h&gt;</code><br>
+<code>#include &quot;textfile.h&quot;</code><br>
+<code>#include &quot;<a class="el" href="_skybox_8h.html">Skybox.h</a>&quot;</code><br>
+<code>#include &quot;<a class="el" href="_carte_8h.html">Carte.h</a>&quot;</code><br>
+<code>#include &quot;<a class="el" href="_gazon_8h.html">Gazon.h</a>&quot;</code><br>
+<code>#include &quot;<a class="el" href="_surface_b_splinaire_8h.html">SurfaceBSplinaire.h</a>&quot;</code><br>
+<code>#include &quot;<a class="el" href="_lumiere_8h.html">Lumiere.h</a>&quot;</code><br>
+<code>#include &quot;<a class="el" href="_cst_8h.html">Cst.h</a>&quot;</code><br>
+<code>#include &quot;<a class="el" href="_var_8h.html">Var.h</a>&quot;</code><br>
+<code>#include &quot;<a class="el" href="_nuanceur_prog_8h.html">NuanceurProg.h</a>&quot;</code><br>
+<code>#include &quot;<a class="el" href="_materiau_8h.html">Materiau.h</a>&quot;</code><br>
+<code>#include &quot;<a class="el" href="_texture2_d_8h.html">Texture2D.h</a>&quot;</code><br>
+<code>#include &quot;<a class="el" href="_texture_cubemap_8h.html">TextureCubemap.h</a>&quot;</code><br>
+
+<p>
+Graphe des dépendances par inclusion de main.cpp:<p><center><img src="main_8cpp__incl.png" border="0" usemap="#main.cpp_map" alt=""></center>
+<map name="main.cpp_map">
+<area href="_skybox_8h.html" shape="rect" coords="161,528,239,555" alt="">
+<area href="_var_8h.html" shape="rect" coords="699,401,752,428" alt="">
+<area href="_cst_8h.html" shape="rect" coords="699,503,752,529" alt="">
+<area href="_carte_8h.html" shape="rect" coords="167,579,233,605" alt="">
+<area href="_texture2_d_8h.html" shape="rect" coords="337,629,433,656" alt="">
+<area href="_gazon_8h.html" shape="rect" coords="164,427,236,453" alt="">
+<area href="_surface_b_splinaire_8h.html" shape="rect" coords="503,376,641,403" alt="">
+<area href="_lumiere_8h.html" shape="rect" coords="345,21,425,48" alt="">
+<area href="_nuanceur_prog_8h.html" shape="rect" coords="513,731,631,757" alt="">
+<area href="_materiau_8h.html" shape="rect" coords="343,123,428,149" alt="">
+<area href="_texture_cubemap_8h.html" shape="rect" coords="132,680,268,707" alt="">
+<area href="_modele3_d_abstrait_8h.html" shape="rect" coords="317,528,453,555" alt="">
+<area href="_texture_abstraite_8h.html" shape="rect" coords="505,604,639,631" alt="">
+<area href="_singleton_8h.html" shape="rect" coords="809,452,897,479" alt="">
+</map>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Énumérations</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#2bfe2695fbb5ab73a342efc128e8d9be">ENUM_LUM</a> </td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">énumération des lumières de la scènes (à utiliser comme INDEX de lumieres[])  <a href="main_8cpp.html#2bfe2695fbb5ab73a342efc128e8d9be">Plus de détails...</a><br></td></tr>
+<tr><td colspan="2"><br><h2>Fonctions</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#fca38b75180be5542b6f94eb21e8a443">attente</a> (void)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#08e8b887556c60c0487d9456582b76cc">clavier</a> (unsigned char touche, int x, int y)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#377f86d5a939c814ba6bade9b07fe714">clavierSpecial</a> (int touche, int x, int y)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#d30a62b896ac47b5a717ccd211af9ff2">mouvementSouris</a> (int x, int y)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#d3df6034c635c0016dfa54bd84fc315d">sourisClickee</a> (int button, int state, int x, int y)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#b09fce1d59a9919465d8492932c7f13d">redimensionnement</a> (GLsizei w, GLsizei h)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#613fdf14213e7a827bc1cf4c32b13673">rafraichirCamera</a> ()</td></tr>
+
+</table>
+<hr><a name="_details"></a><h2>Description détaillée</h2>
+le main du programme ProjetNuanceur pour le cours INF8702 de Polytechnique 
+<p>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-11 </dd></dl>
+<dl compact><dt><b>Version:</b></dt><dd>1.0 </dd></dl>
+<hr><h2>Documentation du type de l'énumération</h2>
+<a class="anchor" name="2bfe2695fbb5ab73a342efc128e8d9be"></a><!-- doxytag: member="main.cpp::ENUM_LUM" ref="2bfe2695fbb5ab73a342efc128e8d9be" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="main_8cpp.html#2bfe2695fbb5ab73a342efc128e8d9be">ENUM_LUM</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+énumération des lumières de la scènes (à utiliser comme INDEX de lumieres[]) 
+<p>
+
+</div>
+</div><p>
+<hr><h2>Documentation des fonctions</h2>
+<a class="anchor" name="fca38b75180be5542b6f94eb21e8a443"></a><!-- doxytag: member="main.cpp::attente" ref="fca38b75180be5542b6f94eb21e8a443" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void attente           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+global public attente <br>
+<p>
+fonction de rappel appelee lorsque l'application ne fait rien. Elle est utilisée pour l'animation.<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-14 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="08e8b887556c60c0487d9456582b76cc"></a><!-- doxytag: member="main.cpp::clavier" ref="08e8b887556c60c0487d9456582b76cc" args="(unsigned char touche, int x, int y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void clavier           </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&nbsp;</td>
+          <td class="paramname"> <em>touche</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+global public clavier <br>
+<p>
+fonction de rappel pour la gestion du clavier<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>touche</em>&nbsp;</td><td>unsigned char le caractère ASCII de la touche enfoncée </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>x</em>&nbsp;</td><td>int la position en x de la souris au moment du rappel </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>y</em>&nbsp;</td><td>int la position en y de la souris au moment du rappel</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-14 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="377f86d5a939c814ba6bade9b07fe714"></a><!-- doxytag: member="main.cpp::clavierSpecial" ref="377f86d5a939c814ba6bade9b07fe714" args="(int touche, int x, int y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void clavierSpecial           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>touche</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+global public clavierSpecial <br>
+<p>
+fonction de rappel pour la gestion du clavier spécial<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>touche</em>&nbsp;</td><td>int le caractère étendu de la touche enfoncée </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>x</em>&nbsp;</td><td>int la position en x de la souris au moment du rappel </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>y</em>&nbsp;</td><td>int la position en y de la souris au moment du rappel</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-14 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d30a62b896ac47b5a717ccd211af9ff2"></a><!-- doxytag: member="main.cpp::mouvementSouris" ref="d30a62b896ac47b5a717ccd211af9ff2" args="(int x, int y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mouvementSouris           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+global public mouvementSouris <br>
+<p>
+fonction de rappel pour la gestion du mouvement de la souris<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>x</em>&nbsp;</td><td>int nouvelle position en x de la souris </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>y</em>&nbsp;</td><td>int nouvelle position en y de la souris</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-14 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="613fdf14213e7a827bc1cf4c32b13673"></a><!-- doxytag: member="main.cpp::rafraichirCamera" ref="613fdf14213e7a827bc1cf4c32b13673" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rafraichirCamera           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+global public rafraichirCamera <br>
+<p>
+Fonction de gestion de la position de la caméra en coordonnées sphériques. Elle s'occuper de trouver les coordonnées x et y de la caméra à partir des theta et phi courants, puis fixe dans openGL la position de la caméra à l'aide de gluLookAt().<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-14 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="b09fce1d59a9919465d8492932c7f13d"></a><!-- doxytag: member="main.cpp::redimensionnement" ref="b09fce1d59a9919465d8492932c7f13d" args="(GLsizei w, GLsizei h)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void redimensionnement           </td>
+          <td>(</td>
+          <td class="paramtype">GLsizei&nbsp;</td>
+          <td class="paramname"> <em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLsizei&nbsp;</td>
+          <td class="paramname"> <em>h</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+global public redimensionnement <br>
+<p>
+fonction de rappel pour le redimensionnement de la fenêtre graphique<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>w</em>&nbsp;</td><td>GLsizei nouvelle largeur "w" en pixels </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>h</em>&nbsp;</td><td>GLsizei nouvelle hauteur "h" en pixels</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-14 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d3df6034c635c0016dfa54bd84fc315d"></a><!-- doxytag: member="main.cpp::sourisClickee" ref="d3df6034c635c0016dfa54bd84fc315d" args="(int button, int state, int x, int y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sourisClickee           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>button</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+global public sourisClickee <br>
+<p>
+fonction de rappel pour la gestion d'un click de la souris<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>button</em>&nbsp;</td><td>int l'identificateur du bouton de souris qui fut clické </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>state</em>&nbsp;</td><td>int l'état du bouton (pressé ou relâché) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>x</em>&nbsp;</td><td>int la position en x de la souris au moment du click </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>y</em>&nbsp;</td><td>int la position en y de la souris au moment du click</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-14 </dd></dl>
+
+</div>
+</div><p>
+<hr size="1"><address style="align: right;"><small>Généré le Wed Sep 17 08:56:36 2008 pour TP3v1 par&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>

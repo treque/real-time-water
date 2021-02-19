@@ -1,0 +1,847 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>TP3v1: Référence de la classe CMateriau</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Généré par Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+    <li><a href="modules.html"><span>Modules</span></a></li>
+    <li id="current"><a href="annotated.html"><span>Structures&nbsp;de&nbsp;données</span></a></li>
+    <li><a href="files.html"><span>Fichiers</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>Structures&nbsp;de&nbsp;données</span></a></li>
+    <li><a href="hierarchy.html"><span>Hiérarchie&nbsp;des&nbsp;classes</span></a></li>
+    <li><a href="functions.html"><span>Champs&nbsp;de&nbsp;donnée</span></a></li>
+  </ul></div>
+<h1>Référence de la classe CMateriau</h1><!-- doxytag: class="CMateriau" -->Cette classe encapsule un matériau openGL (GLMaterial) avec toutes ses composantes de couleur et permet de l'appliquer aisément.  
+<a href="#_details">Plus de détails...</a>
+<p>
+<code>#include &lt;Materiau.h&gt;</code>
+<p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Fonctions membres publiques</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_materiau.html#42ae0fd66a3b1d5155acdf72c7bc2605">CMateriau</a> (void)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">constructeur par défaut  <a href="#42ae0fd66a3b1d5155acdf72c7bc2605"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_materiau.html#699b7531e0e9345ff0658284e38856b1">CMateriau</a> (GLfloat KAr, GLfloat KAg, GLfloat KAb, GLfloat KAa, GLfloat KDr, GLfloat KDg, GLfloat KDb, GLfloat KDa, GLfloat KSr, GLfloat KSg, GLfloat KSb, GLfloat KSa, GLfloat KEr, GLfloat KEg, GLfloat KEb, GLfloat KEa, GLfloat shini=1.0, GLenum face=GL_FRONT_AND_BACK)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">constructeur spécifique  <a href="#699b7531e0e9345ff0658284e38856b1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_materiau.html#cfceda5989dae6bd94f29e3b8b1405b1">~CMateriau</a> (void)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">destructeur par défaut  <a href="#cfceda5989dae6bd94f29e3b8b1405b1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_materiau.html#96e07dde011b25d574673f93d72b754f">appliquer</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">OPENGL : méthode qui applique les paramètres du matériau dans openGL.  <a href="#96e07dde011b25d574673f93d72b754f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_materiau.html#66097c71f399a114d3ecafd8c0a52a4b">obtenirKA</a> (GLfloat KA[4]) const </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_materiau.html#7584c142fe56e20493b7c0c891a50589">modifierKA</a> (GLfloat KAr, GLfloat KAg, GLfloat KAb, GLfloat KAa)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">modifie les quatre composantes RGBA de KA  <a href="#7584c142fe56e20493b7c0c891a50589"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_materiau.html#a82503721c7da60114170a779e3de011">obtenirKD</a> (GLfloat KD[4]) const </td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">obtient les quatre composantes RGBA de KD  <a href="#a82503721c7da60114170a779e3de011"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_materiau.html#993511c2d7df81b4e48a4c9e93569baf">modifierKD</a> (GLfloat KDr, GLfloat KDg, GLfloat KDb, GLfloat KDa)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">modifie les quatre composantes RGBA de KD  <a href="#993511c2d7df81b4e48a4c9e93569baf"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_materiau.html#441bc0e9c9feffd2eb021124cf8b5f3d">obtenirKS</a> (GLfloat KS[4]) const </td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">obtient les quatre composantes RGBA de KS  <a href="#441bc0e9c9feffd2eb021124cf8b5f3d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_materiau.html#23fdb15cbe291c70d72aaf15dde49f33">modifierKS</a> (GLfloat KSr, GLfloat KSg, GLfloat KSb, GLfloat KSa)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">modifie les quatre composantes RGBA de KS  <a href="#23fdb15cbe291c70d72aaf15dde49f33"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_materiau.html#8a48dda9100468c6c413d791ec7b95b5">obtenirKE</a> (GLfloat KE[4]) const </td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">obtient les quatre composantes RGBA de KE  <a href="#8a48dda9100468c6c413d791ec7b95b5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_materiau.html#da6bcf522d279573cc2e815827911b36">modifierKE</a> (GLfloat KEr, GLfloat KEg, GLfloat KEb, GLfloat KEa)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">modifie les quatre composantes RGBA de KE  <a href="#da6bcf522d279573cc2e815827911b36"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GLfloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_materiau.html#40913366fc565649a3563baa093b4dd6">obtenirShininess</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">obtient l'exposant spéculaire  <a href="#40913366fc565649a3563baa093b4dd6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_materiau.html#4eb361a1870bd81bd8ecf4c60664672d">modifierShininess</a> (GLfloat shini)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">modifie l'exposant spéculaire  <a href="#4eb361a1870bd81bd8ecf4c60664672d"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Attributs privés</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GLfloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_materiau.html#2c79681b9dcf0069d478fd4ce815c2ed">KA_</a> [4]</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">composante ambiante [R,G,B,A]  <a href="#2c79681b9dcf0069d478fd4ce815c2ed"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GLfloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_materiau.html#11fd9207046f3a22263f7f3dd8a731fd">KD_</a> [4]</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">composante diffuse [R,G,B,A]  <a href="#11fd9207046f3a22263f7f3dd8a731fd"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GLfloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_materiau.html#9284ece9a3448d6ff8cb327b62b98eb5">KS_</a> [4]</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">composante spéculaire [R,G,B,A]  <a href="#9284ece9a3448d6ff8cb327b62b98eb5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GLfloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_materiau.html#0d08493831a7f0de84a85ebb0ccab631">KE_</a> [4]</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">composante émettrice [R,G,B,A]  <a href="#0d08493831a7f0de84a85ebb0ccab631"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GLfloat&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_materiau.html#8f9365788a8890ec87f835935685074d">shini_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">l'exposant spéculaire du matériau (cos(phi)^shini)  <a href="#8f9365788a8890ec87f835935685074d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GLenum&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_materiau.html#b3cabbfdd14e58b9efec418616dbcba1">face_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">la face (ou les faces) sur lesquelles le matériau s'applique  <a href="#b3cabbfdd14e58b9efec418616dbcba1"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>Description détaillée</h2>
+Cette classe encapsule un matériau openGL (GLMaterial) avec toutes ses composantes de couleur et permet de l'appliquer aisément. 
+<p>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-11 </dd></dl>
+
+<p>
+<hr><h2>Documentation des contructeurs et destructeur</h2>
+<a class="anchor" name="42ae0fd66a3b1d5155acdf72c7bc2605"></a><!-- doxytag: member="CMateriau::CMateriau" ref="42ae0fd66a3b1d5155acdf72c7bc2605" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CMateriau::CMateriau           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+constructeur par défaut 
+<p>
+public overloaded constructor <a class="el" href="class_c_materiau.html">CMateriau</a> <br>
+<p>
+Crée un materiau openGL (GLMaterial) par défaut (blanc pour toutes les composantes)<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-11 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="699b7531e0e9345ff0658284e38856b1"></a><!-- doxytag: member="CMateriau::CMateriau" ref="699b7531e0e9345ff0658284e38856b1" args="(GLfloat KAr, GLfloat KAg, GLfloat KAb, GLfloat KAa, GLfloat KDr, GLfloat KDg, GLfloat KDb, GLfloat KDa, GLfloat KSr, GLfloat KSg, GLfloat KSb, GLfloat KSa, GLfloat KEr, GLfloat KEg, GLfloat KEb, GLfloat KEa, GLfloat shini=1.0, GLenum face=GL_FRONT_AND_BACK)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CMateriau::CMateriau           </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KAr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KAg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KAb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KAa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KDr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KDg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KDb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KDa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KSr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KSg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KSb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KSa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KEr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KEg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KEb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KEa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>shini</em> = <code>1.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLenum&nbsp;</td>
+          <td class="paramname"> <em>face</em> = <code>GL_FRONT_AND_BACK</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+constructeur spécifique 
+<p>
+public overloaded constructor <a class="el" href="class_c_materiau.html">CMateriau</a> <br>
+<p>
+Contructeur d'une lumière spécifique.<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>lumKD</em>&nbsp;</td><td>GLenum l'Identifiant openGL de la lumière associée. </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KAr</em>&nbsp;</td><td>GLfloat composante ambiante (rouge) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KAg</em>&nbsp;</td><td>GLfloat composante ambiante (verte) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KAb</em>&nbsp;</td><td>GLfloat composante ambiante (bleue) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KAa</em>&nbsp;</td><td>GLfloat composante ambiante (alpha) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KDr</em>&nbsp;</td><td>GLfloat composante diffuse (rouge) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KDg</em>&nbsp;</td><td>GLfloat composante diffuse (verte) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KDb</em>&nbsp;</td><td>GLfloat composante diffuse (bleue) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KDa</em>&nbsp;</td><td>GLfloat composante diffuse (alpha) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KSr</em>&nbsp;</td><td>GLfloat composante spéculaire (rouge) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KSg</em>&nbsp;</td><td>GLfloat composante spéculaire (verte) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KSb</em>&nbsp;</td><td>GLfloat composante spéculaire (bleue) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KSa</em>&nbsp;</td><td>GLfloat composante spéculaire (alpha) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KEr</em>&nbsp;</td><td>GLfloat composante émettrice (rouge) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KEg</em>&nbsp;</td><td>GLfloat composante émettrice (verte) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KEb</em>&nbsp;</td><td>GLfloat composante émettrice (bleue) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KEa</em>&nbsp;</td><td>GLfloat composante émettrice (alpha) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>shini</em>&nbsp;</td><td>GLfloat[1.0] l'exposant spéculaire du matériau </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>face</em>&nbsp;</td><td>GLenum [GL_FRONT_AND_BACK] la ou les faces sur lesquelles le matériau s'applique</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-11 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="cfceda5989dae6bd94f29e3b8b1405b1"></a><!-- doxytag: member="CMateriau::~CMateriau" ref="cfceda5989dae6bd94f29e3b8b1405b1" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CMateriau::~CMateriau           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+destructeur par défaut 
+<p>
+public destructor ~CMateriau <br>
+<p>
+Destructeur par défaut (vide)<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-13 </dd></dl>
+
+</div>
+</div><p>
+<hr><h2>Documentation des fonctions membres</h2>
+<a class="anchor" name="96e07dde011b25d574673f93d72b754f"></a><!-- doxytag: member="CMateriau::appliquer" ref="96e07dde011b25d574673f93d72b754f" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMateriau::appliquer           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+OPENGL : méthode qui applique les paramètres du matériau dans openGL. 
+<p>
+public appliquer <br>
+<p>
+Cette méthode applique les paramètres du matériau dans openGL<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-11 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="7584c142fe56e20493b7c0c891a50589"></a><!-- doxytag: member="CMateriau::modifierKA" ref="7584c142fe56e20493b7c0c891a50589" args="(GLfloat KAr, GLfloat KAg, GLfloat KAb, GLfloat KAa)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMateriau::modifierKA           </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KAr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KAg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KAb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KAa</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+modifie les quatre composantes RGBA de KA 
+<p>
+inline public modifierKA <br>
+<p>
+modifie les quatre composantes RGBA de KA<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KAr</em>&nbsp;</td><td>GLfloat composante Rouge </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KAg</em>&nbsp;</td><td>GLfloat composante Verte </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KAb</em>&nbsp;</td><td>GLfloat composante Bleue </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KAa</em>&nbsp;</td><td>GLfloat composante alpha</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-11 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="993511c2d7df81b4e48a4c9e93569baf"></a><!-- doxytag: member="CMateriau::modifierKD" ref="993511c2d7df81b4e48a4c9e93569baf" args="(GLfloat KDr, GLfloat KDg, GLfloat KDb, GLfloat KDa)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMateriau::modifierKD           </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KDr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KDg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KDb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KDa</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+modifie les quatre composantes RGBA de KD 
+<p>
+inline public modifierKD <br>
+<p>
+modifie les quatre composantes RGBA de KD<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KDr</em>&nbsp;</td><td>GLfloat composante Rouge </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KDg</em>&nbsp;</td><td>GLfloat composante Verte </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KDb</em>&nbsp;</td><td>GLfloat composante Bleue </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KDa</em>&nbsp;</td><td>GLfloat composante alpha</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-11 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="da6bcf522d279573cc2e815827911b36"></a><!-- doxytag: member="CMateriau::modifierKE" ref="da6bcf522d279573cc2e815827911b36" args="(GLfloat KEr, GLfloat KEg, GLfloat KEb, GLfloat KEa)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMateriau::modifierKE           </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KEr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KEg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KEb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KEa</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+modifie les quatre composantes RGBA de KE 
+<p>
+inline public modifierKE <br>
+<p>
+modifie les quatre composantes RGBA de KE<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KEr</em>&nbsp;</td><td>GLfloat composante Rouge </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KEg</em>&nbsp;</td><td>GLfloat composante Verte </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KEb</em>&nbsp;</td><td>GLfloat composante Bleue </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KEa</em>&nbsp;</td><td>GLfloat composante alpha</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-11 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="23fdb15cbe291c70d72aaf15dde49f33"></a><!-- doxytag: member="CMateriau::modifierKS" ref="23fdb15cbe291c70d72aaf15dde49f33" args="(GLfloat KSr, GLfloat KSg, GLfloat KSb, GLfloat KSa)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMateriau::modifierKS           </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KSr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KSg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KSb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KSa</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+modifie les quatre composantes RGBA de KS 
+<p>
+inline public modifierKS <br>
+<p>
+modifie les quatre composantes RGBA de KS<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KSr</em>&nbsp;</td><td>GLfloat composante Rouge </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KSg</em>&nbsp;</td><td>GLfloat composante Verte </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KSb</em>&nbsp;</td><td>GLfloat composante Bleue </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KSa</em>&nbsp;</td><td>GLfloat composante alpha</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-11 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="4eb361a1870bd81bd8ecf4c60664672d"></a><!-- doxytag: member="CMateriau::modifierShininess" ref="4eb361a1870bd81bd8ecf4c60664672d" args="(GLfloat shini)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMateriau::modifierShininess           </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>shini</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+modifie l'exposant spéculaire 
+<p>
+inline public modifierShininess <br>
+<p>
+Modifie l'exposant spéculaire du matériau (cos(phi)^shini)<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>shini</em>&nbsp;</td><td>GLfloat : l'exposant spéculaire du matériau</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-13 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="66097c71f399a114d3ecafd8c0a52a4b"></a><!-- doxytag: member="CMateriau::obtenirKA" ref="66097c71f399a114d3ecafd8c0a52a4b" args="(GLfloat KA[4]) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMateriau::obtenirKA           </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KA</em>[4]          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+obtient les quatre composantes RGBA de KA 
+</div>
+</div><p>
+<a class="anchor" name="a82503721c7da60114170a779e3de011"></a><!-- doxytag: member="CMateriau::obtenirKD" ref="a82503721c7da60114170a779e3de011" args="(GLfloat KD[4]) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMateriau::obtenirKD           </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KD</em>[4]          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+obtient les quatre composantes RGBA de KD 
+<p>
+inline public constant obtenirKD <br>
+<p>
+obtient les quatre composantes RGBA de KD<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KA</em>&nbsp;</td><td>GLfloat[] </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-11 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="8a48dda9100468c6c413d791ec7b95b5"></a><!-- doxytag: member="CMateriau::obtenirKE" ref="8a48dda9100468c6c413d791ec7b95b5" args="(GLfloat KE[4]) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMateriau::obtenirKE           </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KE</em>[4]          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+obtient les quatre composantes RGBA de KE 
+<p>
+inline public constant obtenirKE <br>
+<p>
+obtient les quatre composantes RGBA de KE<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KE</em>&nbsp;</td><td>GLfloat[] </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-11 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="441bc0e9c9feffd2eb021124cf8b5f3d"></a><!-- doxytag: member="CMateriau::obtenirKS" ref="441bc0e9c9feffd2eb021124cf8b5f3d" args="(GLfloat KS[4]) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMateriau::obtenirKS           </td>
+          <td>(</td>
+          <td class="paramtype">GLfloat&nbsp;</td>
+          <td class="paramname"> <em>KS</em>[4]          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+obtient les quatre composantes RGBA de KS 
+<p>
+inline public constant obtenirKS <br>
+<p>
+obtient les quatre composantes RGBA de KA<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>KA</em>&nbsp;</td><td>GLfloat[] </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-11 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="40913366fc565649a3563baa093b4dd6"></a><!-- doxytag: member="CMateriau::obtenirShininess" ref="40913366fc565649a3563baa093b4dd6" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLfloat CMateriau::obtenirShininess           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+obtient l'exposant spéculaire 
+<p>
+inline public obtenirShininess <br>
+<p>
+Obtient d'exposant spéculaire du matériau (cos(phi)^shini)<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>GLfloat : exposant spéculaire du matériau</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-13 </dd></dl>
+
+</div>
+</div><p>
+<hr><h2>Documentation des champs</h2>
+<a class="anchor" name="b3cabbfdd14e58b9efec418616dbcba1"></a><!-- doxytag: member="CMateriau::face_" ref="b3cabbfdd14e58b9efec418616dbcba1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLenum <a class="el" href="class_c_materiau.html#b3cabbfdd14e58b9efec418616dbcba1">CMateriau::face_</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+la face (ou les faces) sur lesquelles le matériau s'applique 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="2c79681b9dcf0069d478fd4ce815c2ed"></a><!-- doxytag: member="CMateriau::KA_" ref="2c79681b9dcf0069d478fd4ce815c2ed" args="[4]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLfloat <a class="el" href="class_c_materiau.html#2c79681b9dcf0069d478fd4ce815c2ed">CMateriau::KA_</a>[4]<code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+composante ambiante [R,G,B,A] 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="11fd9207046f3a22263f7f3dd8a731fd"></a><!-- doxytag: member="CMateriau::KD_" ref="11fd9207046f3a22263f7f3dd8a731fd" args="[4]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLfloat <a class="el" href="class_c_materiau.html#11fd9207046f3a22263f7f3dd8a731fd">CMateriau::KD_</a>[4]<code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+composante diffuse [R,G,B,A] 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="0d08493831a7f0de84a85ebb0ccab631"></a><!-- doxytag: member="CMateriau::KE_" ref="0d08493831a7f0de84a85ebb0ccab631" args="[4]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLfloat <a class="el" href="class_c_materiau.html#0d08493831a7f0de84a85ebb0ccab631">CMateriau::KE_</a>[4]<code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+composante émettrice [R,G,B,A] 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="9284ece9a3448d6ff8cb327b62b98eb5"></a><!-- doxytag: member="CMateriau::KS_" ref="9284ece9a3448d6ff8cb327b62b98eb5" args="[4]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLfloat <a class="el" href="class_c_materiau.html#9284ece9a3448d6ff8cb327b62b98eb5">CMateriau::KS_</a>[4]<code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+composante spéculaire [R,G,B,A] 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="8f9365788a8890ec87f835935685074d"></a><!-- doxytag: member="CMateriau::shini_" ref="8f9365788a8890ec87f835935685074d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLfloat <a class="el" href="class_c_materiau.html#8f9365788a8890ec87f835935685074d">CMateriau::shini_</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+l'exposant spéculaire du matériau (cos(phi)^shini) 
+<p>
+
+</div>
+</div><p>
+<hr>La documentation de cette classe a été générée à partir des fichiers suivants:<ul>
+<li><a class="el" href="_materiau_8h.html">Materiau.h</a><li><a class="el" href="_materiau_8cpp.html">Materiau.cpp</a></ul>
+<hr size="1"><address style="align: right;"><small>Généré le Wed Sep 17 08:56:44 2008 pour TP3v1 par&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>

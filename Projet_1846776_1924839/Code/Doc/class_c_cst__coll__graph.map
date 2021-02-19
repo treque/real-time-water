@@ -1,0 +1,3 @@
+base referer
+rect $class_singleton.html 5,187 136,214
+rect $struct_point.html 45,6 96,32

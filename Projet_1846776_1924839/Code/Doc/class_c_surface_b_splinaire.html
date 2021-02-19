@@ -1,0 +1,837 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>TP3v1: Référence de la classe CSurfaceBSplinaire</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Généré par Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+    <li><a href="modules.html"><span>Modules</span></a></li>
+    <li id="current"><a href="annotated.html"><span>Structures&nbsp;de&nbsp;données</span></a></li>
+    <li><a href="files.html"><span>Fichiers</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>Structures&nbsp;de&nbsp;données</span></a></li>
+    <li><a href="hierarchy.html"><span>Hiérarchie&nbsp;des&nbsp;classes</span></a></li>
+    <li><a href="functions.html"><span>Champs&nbsp;de&nbsp;donnée</span></a></li>
+  </ul></div>
+<h1>Référence de la classe CSurfaceBSplinaire</h1><!-- doxytag: class="CSurfaceBSplinaire" -->Classe encapsulant une surface Bsplinaire.  
+<a href="#_details">Plus de détails...</a>
+<p>
+<code>#include &lt;SurfaceBSplinaire.h&gt;</code>
+<p>
+Dérivée par CGazon<code> [private]</code>.
+<p>
+Graphe de collaboration de CSurfaceBSplinaire:<p><center><img src="class_c_surface_b_splinaire__coll__graph.png" border="0" usemap="#_c_surface_b_splinaire__coll__map" alt="Collaboration graph"></center>
+<map name="_c_surface_b_splinaire__coll__map">
+<area href="struct_point.html" shape="rect" coords="49,5,100,32" alt="">
+</map>
+<center><font size="2">[<a href="graph_legend.html">légende</a>]</font></center><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Fonctions membres publiques</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_surface_b_splinaire.html#c06f8aab2b886e5869f2c45a582a2655">CSurfaceBSplinaire</a> (uint numPts_U, uint numPts_V, const <a class="el" href="struct_point.html">Point</a> *Points, uint num_knots_U, uint num_knots_V, const float *knots_U, const float *knots_V, uint NDD=20, uint degree_U=3, uint degree_V=3, uint order_U=4, uint order_V=4, float scale_U=1.0, float scale_V=1.0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">constructeur spécifique  <a href="#c06f8aab2b886e5869f2c45a582a2655"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_surface_b_splinaire.html#7ce67c01a8208afa298992511266c8f4">~CSurfaceBSplinaire</a> (void)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">destructeur de la surface bsplinaire  <a href="#7ce67c01a8208afa298992511266c8f4"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Fonctions membres publiques statiques</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_surface_b_splinaire.html#764a877b5c96227bb51e3e65192082ff">CoxDeBoor</a> (float u, int i, int k, const float *noeuds)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">fonction récursive de calculs des coefficients de la B-spline associée  <a href="#764a877b5c96227bb51e3e65192082ff"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static <a class="el" href="struct_point.html">Point</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_surface_b_splinaire.html#6fefbf09c81f98f4a0c071ba34c005c9">calculer</a> (float u, float v)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">évalue la B-spline aux coordonnées (u,v)  <a href="#6fefbf09c81f98f4a0c071ba34c005c9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static <a class="el" href="struct_point.html">Point</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_surface_b_splinaire.html#e1a2db470f9f3db5b08008f9b89f1c28">calculerU</a> (float t, int row)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">effectue le calcul des "u" de la B-spline sur la rangée v spécifiée par "row"  <a href="#e1a2db470f9f3db5b08008f9b89f1c28"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static <a class="el" href="struct_point.html">Point</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_surface_b_splinaire.html#656ffd16518aa75b5e548ee429928165">calculerV</a> (float t, <a class="el" href="struct_point.html">Point</a> *pnts)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">effectue le calcul des "v" de la B-spline sur toutes les colonnes  <a href="#656ffd16518aa75b5e548ee429928165"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_surface_b_splinaire.html#ff6f4eff8362b3caf0621fc9a3710c0b">dessinerOpenGL</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">affiche la surface bsplinaire  <a href="#ff6f4eff8362b3caf0621fc9a3710c0b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_surface_b_splinaire.html#29051a06550175dc663a68a897f55e9e">chargerTexture</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">charge la texture associée spécifié à la construction  <a href="#29051a06550175dc663a68a897f55e9e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_surface_b_splinaire.html#55b463c9a4ab0182d82733046cd718ae">MinU</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">retourne la valeur minimale de la plage valide du paramètre en u  <a href="#55b463c9a4ab0182d82733046cd718ae"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_surface_b_splinaire.html#893798faed23969ac29d4668de7ff9bf">MinV</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">retourne la valeur minimale de la plage valide du paramètre en v  <a href="#893798faed23969ac29d4668de7ff9bf"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_surface_b_splinaire.html#11f4eea7127c62faf50b82d7ef3c2fff">MaxU</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">retourne la valeur maximale de la plage valide du paramètre en u  <a href="#11f4eea7127c62faf50b82d7ef3c2fff"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_surface_b_splinaire.html#97fcd3203c20f488b69a8b0712b568e4">MaxV</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">retourne la valeur maximale de la plage valide du paramètre en v  <a href="#97fcd3203c20f488b69a8b0712b568e4"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Attributs publics statiques</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static <a class="el" href="struct_point.html">Point</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_surface_b_splinaire.html#cd289d3d77c1d4c794053f08c7c7ed68">points_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">La liste des points de contrôle de la surface bsplinaire.  <a href="#cd289d3d77c1d4c794053f08c7c7ed68"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static float *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_surface_b_splinaire.html#8d061d62eea758fdbecf19c06d428634">noeudsU_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Le vecteur nodal U.  <a href="#8d061d62eea758fdbecf19c06d428634"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static float *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_surface_b_splinaire.html#edef48229ed6da7479a37a2cce17e373">noeudsV_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Le vecteur nodal V.  <a href="#edef48229ed6da7479a37a2cce17e373"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static GLuint&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_surface_b_splinaire.html#80fdb7d1ba81c882774a586763b62d73">surfaceList_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">La liste d'affichage openGL de la surface bsplinaire.  <a href="#80fdb7d1ba81c882774a586763b62d73"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static GLuint&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_surface_b_splinaire.html#bc1e27e07d6b075dabbbe6d11f5638c5">textureName_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Le nom de la texture utilisée pour afficher la surface.  <a href="#bc1e27e07d6b075dabbbe6d11f5638c5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static unsigned int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_surface_b_splinaire.html#cd4d162ac409df329fa78fb4f6884bb7">nbNoeudsU_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">le nombre de noeuds dans le vecteur nodal en direction U  <a href="#cd4d162ac409df329fa78fb4f6884bb7"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static unsigned int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_surface_b_splinaire.html#623215710130e70cc2d31d5c7d803976">nbNoeudsV_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">le nombre de noeuds dans le vecteur nodal en direction V  <a href="#623215710130e70cc2d31d5c7d803976"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static unsigned int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_surface_b_splinaire.html#2840a78026032264c2659f57c0160ab5">nbPtsCtrlU_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">le nombre de points de contrôle de la surface en direction U  <a href="#2840a78026032264c2659f57c0160ab5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static unsigned int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_surface_b_splinaire.html#9c440dc46aa8541e3b16797516c009ba">nbPtsCtrlV_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">le nombre de points de contrôle de la surface en direction V  <a href="#9c440dc46aa8541e3b16797516c009ba"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static unsigned int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_surface_b_splinaire.html#d4e6de60ec829ecdd60d52c942d46413">degreU_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">le degré du polynôme d'approximation en direction U  <a href="#d4e6de60ec829ecdd60d52c942d46413"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static unsigned int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_surface_b_splinaire.html#3c2ccea91397cccb5b5df93b6d8009cf">degreV_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">le degré du polynôme d'approximation en direction V  <a href="#3c2ccea91397cccb5b5df93b6d8009cf"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static unsigned int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_surface_b_splinaire.html#b8c28b54dde8f5905b62fe7e1722ce1d">ordreU_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">l'ordre du polynôme d'approximation en direction U  <a href="#b8c28b54dde8f5905b62fe7e1722ce1d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static unsigned int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_surface_b_splinaire.html#c5ef4476a1b82c1e057a651f76adb664">ordreV_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">l'ordre du polynôme d'approximation en direction U  <a href="#c5ef4476a1b82c1e057a651f76adb664"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_surface_b_splinaire.html#795ed22db2ddfe9d43da98844031ebc1">scaleU_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">la mise à l'échelle openGL (glScalef) à appliquer à la surface selon u dans la liste d'affichage  <a href="#795ed22db2ddfe9d43da98844031ebc1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_surface_b_splinaire.html#e7583a1b2f4b305d7f8214751bb600ec">scaleV_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">la mise à l'échelle openGL (glScalef) à appliquer à la surface selon v dans la liste d'affichage  <a href="#e7583a1b2f4b305d7f8214751bb600ec"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static unsigned int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_surface_b_splinaire.html#42087ee796e3b63962a852c4c85f8631">NDD_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">le Niveau De Détail de la surface (nombre de colonne et de rangées en sommets)  <a href="#42087ee796e3b63962a852c4c85f8631"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>Description détaillée</h2>
+Classe encapsulant une surface Bsplinaire. 
+<p>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-13 </dd></dl>
+
+<p>
+<hr><h2>Documentation des contructeurs et destructeur</h2>
+<a class="anchor" name="c06f8aab2b886e5869f2c45a582a2655"></a><!-- doxytag: member="CSurfaceBSplinaire::CSurfaceBSplinaire" ref="c06f8aab2b886e5869f2c45a582a2655" args="(uint numPts_U, uint numPts_V, const Point *Points, uint num_knots_U, uint num_knots_V, const float *knots_U, const float *knots_V, uint NDD=20, uint degree_U=3, uint degree_V=3, uint order_U=4, uint order_V=4, float scale_U=1.0, float scale_V=1.0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CSurfaceBSplinaire::CSurfaceBSplinaire           </td>
+          <td>(</td>
+          <td class="paramtype">uint&nbsp;</td>
+          <td class="paramname"> <em>numPts_U</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&nbsp;</td>
+          <td class="paramname"> <em>numPts_V</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_point.html">Point</a> *&nbsp;</td>
+          <td class="paramname"> <em>Points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&nbsp;</td>
+          <td class="paramname"> <em>num_knots_U</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&nbsp;</td>
+          <td class="paramname"> <em>num_knots_V</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *&nbsp;</td>
+          <td class="paramname"> <em>knots_U</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *&nbsp;</td>
+          <td class="paramname"> <em>knots_V</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&nbsp;</td>
+          <td class="paramname"> <em>NDD</em> = <code>20</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&nbsp;</td>
+          <td class="paramname"> <em>degree_U</em> = <code>3</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&nbsp;</td>
+          <td class="paramname"> <em>degree_V</em> = <code>3</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&nbsp;</td>
+          <td class="paramname"> <em>order_U</em> = <code>4</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&nbsp;</td>
+          <td class="paramname"> <em>order_V</em> = <code>4</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>scale_U</em> = <code>1.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>scale_V</em> = <code>1.0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+constructeur spécifique 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="7ce67c01a8208afa298992511266c8f4"></a><!-- doxytag: member="CSurfaceBSplinaire::~CSurfaceBSplinaire" ref="7ce67c01a8208afa298992511266c8f4" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CSurfaceBSplinaire::~CSurfaceBSplinaire           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+destructeur de la surface bsplinaire 
+<p>
+public destructor ~CSurfaceBSplinaire <br>
+<p>
+Destructeur de la surface. Détruit : noeudsU_, noeudsV_ et points_<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-13 </dd></dl>
+
+</div>
+</div><p>
+<hr><h2>Documentation des fonctions membres</h2>
+<a class="anchor" name="6fefbf09c81f98f4a0c071ba34c005c9"></a><!-- doxytag: member="CSurfaceBSplinaire::calculer" ref="6fefbf09c81f98f4a0c071ba34c005c9" args="(float u, float v)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_point.html">Point</a> CSurfaceBSplinaire::calculer           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>v</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+évalue la B-spline aux coordonnées (u,v) 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="e1a2db470f9f3db5b08008f9b89f1c28"></a><!-- doxytag: member="CSurfaceBSplinaire::calculerU" ref="e1a2db470f9f3db5b08008f9b89f1c28" args="(float t, int row)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_point.html">Point</a> CSurfaceBSplinaire::calculerU           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>row</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+effectue le calcul des "u" de la B-spline sur la rangée v spécifiée par "row" 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="656ffd16518aa75b5e548ee429928165"></a><!-- doxytag: member="CSurfaceBSplinaire::calculerV" ref="656ffd16518aa75b5e548ee429928165" args="(float t, Point *pnts)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_point.html">Point</a> CSurfaceBSplinaire::calculerV           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_point.html">Point</a> *&nbsp;</td>
+          <td class="paramname"> <em>pnts</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+effectue le calcul des "v" de la B-spline sur toutes les colonnes 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="29051a06550175dc663a68a897f55e9e"></a><!-- doxytag: member="CSurfaceBSplinaire::chargerTexture" ref="29051a06550175dc663a68a897f55e9e" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSurfaceBSplinaire::chargerTexture           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+charge la texture associée spécifié à la construction 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="764a877b5c96227bb51e3e65192082ff"></a><!-- doxytag: member="CSurfaceBSplinaire::CoxDeBoor" ref="764a877b5c96227bb51e3e65192082ff" args="(float u, int i, int k, const float *noeuds)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CSurfaceBSplinaire::CoxDeBoor           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>k</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *&nbsp;</td>
+          <td class="paramname"> <em>Knots</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+fonction récursive de calculs des coefficients de la B-spline associée 
+<p>
+Cette fonction permet de descendre récursivement le long des intervalles adjascents de façon à trouver quels intervalles jouent un rôle (return 1.0f) ou non return (0.0f) dans l'évaluation de la spline courante au point u<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>u</em>&nbsp;</td><td>: la valeur du paramètre d'évaluation (l'endroit sur la spline où on veut évaluer la coordonnée. </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>i</em>&nbsp;</td><td>: le numéro de l'intervalle considéré </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>k</em>&nbsp;</td><td>: l'ordre courant du polynôme d'évaluation </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>noeuds</em>&nbsp;</td><td>: un pointeur sur le vecteur nodal en cours (soit en U.. soit en V)</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>1.0 si l'intervalle intervient dans l'évaluation du point considéré 0.0 s'il n'intervient pas. </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="ff6f4eff8362b3caf0621fc9a3710c0b"></a><!-- doxytag: member="CSurfaceBSplinaire::dessinerOpenGL" ref="ff6f4eff8362b3caf0621fc9a3710c0b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSurfaceBSplinaire::dessinerOpenGL           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+affiche la surface bsplinaire 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="11f4eea7127c62faf50b82d7ef3c2fff"></a><!-- doxytag: member="CSurfaceBSplinaire::MaxU" ref="11f4eea7127c62faf50b82d7ef3c2fff" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CSurfaceBSplinaire::MaxU           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+retourne la valeur maximale de la plage valide du paramètre en u 
+<p>
+private MaxU <br>
+<p>
+retourne la valeur maximale de la plage valide du paramètre en u<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>float : la valeur maximale de la plage valide du paramètre en u</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-13 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="97fcd3203c20f488b69a8b0712b568e4"></a><!-- doxytag: member="CSurfaceBSplinaire::MaxV" ref="97fcd3203c20f488b69a8b0712b568e4" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CSurfaceBSplinaire::MaxV           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+retourne la valeur maximale de la plage valide du paramètre en v 
+<p>
+private MaxV <br>
+<p>
+retourne la valeur maximale de la plage valide du paramètre en v<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>float : la valeur maximale de la plage valide du paramètre en v</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-13 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="55b463c9a4ab0182d82733046cd718ae"></a><!-- doxytag: member="CSurfaceBSplinaire::MinU" ref="55b463c9a4ab0182d82733046cd718ae" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CSurfaceBSplinaire::MinU           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+retourne la valeur minimale de la plage valide du paramètre en u 
+<p>
+private MinU <br>
+<p>
+retourne la valeur minimale de la plage valide du paramètre en u<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>float : la valeur minimale de la plage valide du paramètre en u</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-13 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="893798faed23969ac29d4668de7ff9bf"></a><!-- doxytag: member="CSurfaceBSplinaire::MinV" ref="893798faed23969ac29d4668de7ff9bf" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CSurfaceBSplinaire::MinV           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+retourne la valeur minimale de la plage valide du paramètre en v 
+<p>
+private MinV <br>
+<p>
+retourne la valeur minimale de la plage valide du paramètre en v<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>float : la valeur minimale de la plage valide du paramètre en v</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-13 </dd></dl>
+
+</div>
+</div><p>
+<hr><h2>Documentation des champs</h2>
+<a class="anchor" name="d4e6de60ec829ecdd60d52c942d46413"></a><!-- doxytag: member="CSurfaceBSplinaire::degreU_" ref="d4e6de60ec829ecdd60d52c942d46413" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="class_c_surface_b_splinaire.html#d4e6de60ec829ecdd60d52c942d46413">CSurfaceBSplinaire::degreU_</a><code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+le degré du polynôme d'approximation en direction U 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="3c2ccea91397cccb5b5df93b6d8009cf"></a><!-- doxytag: member="CSurfaceBSplinaire::degreV_" ref="3c2ccea91397cccb5b5df93b6d8009cf" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="class_c_surface_b_splinaire.html#3c2ccea91397cccb5b5df93b6d8009cf">CSurfaceBSplinaire::degreV_</a><code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+le degré du polynôme d'approximation en direction V 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="cd4d162ac409df329fa78fb4f6884bb7"></a><!-- doxytag: member="CSurfaceBSplinaire::nbNoeudsU_" ref="cd4d162ac409df329fa78fb4f6884bb7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="class_c_surface_b_splinaire.html#cd4d162ac409df329fa78fb4f6884bb7">CSurfaceBSplinaire::nbNoeudsU_</a><code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+le nombre de noeuds dans le vecteur nodal en direction U 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="623215710130e70cc2d31d5c7d803976"></a><!-- doxytag: member="CSurfaceBSplinaire::nbNoeudsV_" ref="623215710130e70cc2d31d5c7d803976" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="class_c_surface_b_splinaire.html#623215710130e70cc2d31d5c7d803976">CSurfaceBSplinaire::nbNoeudsV_</a><code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+le nombre de noeuds dans le vecteur nodal en direction V 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="2840a78026032264c2659f57c0160ab5"></a><!-- doxytag: member="CSurfaceBSplinaire::nbPtsCtrlU_" ref="2840a78026032264c2659f57c0160ab5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="class_c_surface_b_splinaire.html#2840a78026032264c2659f57c0160ab5">CSurfaceBSplinaire::nbPtsCtrlU_</a><code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+le nombre de points de contrôle de la surface en direction U 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="9c440dc46aa8541e3b16797516c009ba"></a><!-- doxytag: member="CSurfaceBSplinaire::nbPtsCtrlV_" ref="9c440dc46aa8541e3b16797516c009ba" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="class_c_surface_b_splinaire.html#9c440dc46aa8541e3b16797516c009ba">CSurfaceBSplinaire::nbPtsCtrlV_</a><code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+le nombre de points de contrôle de la surface en direction V 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="42087ee796e3b63962a852c4c85f8631"></a><!-- doxytag: member="CSurfaceBSplinaire::NDD_" ref="42087ee796e3b63962a852c4c85f8631" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="class_c_surface_b_splinaire.html#42087ee796e3b63962a852c4c85f8631">CSurfaceBSplinaire::NDD_</a><code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+le Niveau De Détail de la surface (nombre de colonne et de rangées en sommets) 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="8d061d62eea758fdbecf19c06d428634"></a><!-- doxytag: member="CSurfaceBSplinaire::noeudsU_" ref="8d061d62eea758fdbecf19c06d428634" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float * <a class="el" href="class_c_surface_b_splinaire.html#8d061d62eea758fdbecf19c06d428634">CSurfaceBSplinaire::noeudsU_</a><code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Le vecteur nodal U. 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="edef48229ed6da7479a37a2cce17e373"></a><!-- doxytag: member="CSurfaceBSplinaire::noeudsV_" ref="edef48229ed6da7479a37a2cce17e373" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float * <a class="el" href="class_c_surface_b_splinaire.html#edef48229ed6da7479a37a2cce17e373">CSurfaceBSplinaire::noeudsV_</a><code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Le vecteur nodal V. 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="b8c28b54dde8f5905b62fe7e1722ce1d"></a><!-- doxytag: member="CSurfaceBSplinaire::ordreU_" ref="b8c28b54dde8f5905b62fe7e1722ce1d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="class_c_surface_b_splinaire.html#b8c28b54dde8f5905b62fe7e1722ce1d">CSurfaceBSplinaire::ordreU_</a><code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+l'ordre du polynôme d'approximation en direction U 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="c5ef4476a1b82c1e057a651f76adb664"></a><!-- doxytag: member="CSurfaceBSplinaire::ordreV_" ref="c5ef4476a1b82c1e057a651f76adb664" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="class_c_surface_b_splinaire.html#c5ef4476a1b82c1e057a651f76adb664">CSurfaceBSplinaire::ordreV_</a><code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+l'ordre du polynôme d'approximation en direction U 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="cd289d3d77c1d4c794053f08c7c7ed68"></a><!-- doxytag: member="CSurfaceBSplinaire::points_" ref="cd289d3d77c1d4c794053f08c7c7ed68" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_point.html">Point</a> * <a class="el" href="class_c_surface_b_splinaire.html#cd289d3d77c1d4c794053f08c7c7ed68">CSurfaceBSplinaire::points_</a><code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+La liste des points de contrôle de la surface bsplinaire. 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="795ed22db2ddfe9d43da98844031ebc1"></a><!-- doxytag: member="CSurfaceBSplinaire::scaleU_" ref="795ed22db2ddfe9d43da98844031ebc1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_c_surface_b_splinaire.html#795ed22db2ddfe9d43da98844031ebc1">CSurfaceBSplinaire::scaleU_</a><code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+la mise à l'échelle openGL (glScalef) à appliquer à la surface selon u dans la liste d'affichage 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="e7583a1b2f4b305d7f8214751bb600ec"></a><!-- doxytag: member="CSurfaceBSplinaire::scaleV_" ref="e7583a1b2f4b305d7f8214751bb600ec" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_c_surface_b_splinaire.html#e7583a1b2f4b305d7f8214751bb600ec">CSurfaceBSplinaire::scaleV_</a><code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+la mise à l'échelle openGL (glScalef) à appliquer à la surface selon v dans la liste d'affichage 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="80fdb7d1ba81c882774a586763b62d73"></a><!-- doxytag: member="CSurfaceBSplinaire::surfaceList_" ref="80fdb7d1ba81c882774a586763b62d73" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint <a class="el" href="class_c_surface_b_splinaire.html#80fdb7d1ba81c882774a586763b62d73">CSurfaceBSplinaire::surfaceList_</a><code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+La liste d'affichage openGL de la surface bsplinaire. 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="bc1e27e07d6b075dabbbe6d11f5638c5"></a><!-- doxytag: member="CSurfaceBSplinaire::textureName_" ref="bc1e27e07d6b075dabbbe6d11f5638c5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint <a class="el" href="class_c_surface_b_splinaire.html#bc1e27e07d6b075dabbbe6d11f5638c5">CSurfaceBSplinaire::textureName_</a><code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Le nom de la texture utilisée pour afficher la surface. 
+<p>
+
+</div>
+</div><p>
+<hr>La documentation de cette classe a été générée à partir des fichiers suivants:<ul>
+<li><a class="el" href="_surface_b_splinaire_8h.html">SurfaceBSplinaire.h</a><li><a class="el" href="_surface_b_splinaire_8cpp.html">SurfaceBSplinaire.cpp</a></ul>
+<hr size="1"><address style="align: right;"><small>Généré le Wed Sep 17 08:56:44 2008 pour TP3v1 par&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>TP3v1: Référence de la classe CCarte</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Généré par Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+    <li><a href="modules.html"><span>Modules</span></a></li>
+    <li id="current"><a href="annotated.html"><span>Structures&nbsp;de&nbsp;données</span></a></li>
+    <li><a href="files.html"><span>Fichiers</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>Structures&nbsp;de&nbsp;données</span></a></li>
+    <li><a href="hierarchy.html"><span>Hiérarchie&nbsp;des&nbsp;classes</span></a></li>
+    <li><a href="functions.html"><span>Champs&nbsp;de&nbsp;donnée</span></a></li>
+  </ul></div>
+<h1>Référence de la classe CCarte</h1><!-- doxytag: class="CCarte" --><!-- doxytag: inherits="CModele3DAbstrait" --><code>#include &lt;Carte.h&gt;</code>
+<p>
+Est dérivée de <a class="el" href="class_c_modele3_d_abstrait.html">CModele3DAbstrait</a>.
+<p>
+Graphe d'héritage de CCarte:<p><center><img src="class_c_carte__inherit__graph.png" border="0" usemap="#_c_carte__inherit__map" alt="Inheritance graph"></center>
+<map name="_c_carte__inherit__map">
+<area href="class_c_modele3_d_abstrait.html" shape="rect" coords="6,5,142,32" alt="">
+</map>
+<center><font size="2">[<a href="graph_legend.html">légende</a>]</font></center>Graphe de collaboration de CCarte:<p><center><img src="class_c_carte__coll__graph.png" border="0" usemap="#_c_carte__coll__map" alt="Collaboration graph"></center>
+<map name="_c_carte__coll__map">
+<area href="class_c_modele3_d_abstrait.html" shape="rect" coords="6,5,142,32" alt="">
+</map>
+<center><font size="2">[<a href="graph_legend.html">légende</a>]</font></center><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Fonctions membres publiques</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_carte.html#81dd7e1f691db1e955e008364b3b1871">CCarte</a> (char *nomFichierTexture, float largeur, float hauteur, int nbColonnes, int nbRangees, float echelle=1.0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">constructeur spécifique pour création d'une carte ne comportant qu'une seule texture  <a href="#81dd7e1f691db1e955e008364b3b1871"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_carte.html#d928546c80885cb5c825ff25ade65347">CCarte</a> (std::vector&lt; char * &gt; *nomsFichiersTextures, float largeur, float hauteur, int nbColonnes, int nbRangees, float echelle=1.0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">constructeur spécifique pour création d'une carte comportant plusieurs textures  <a href="#d928546c80885cb5c825ff25ade65347"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_carte.html#2b78ab760bb1ff185c2f4d57102752dc">~CCarte</a> (void)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">destructeur par défaut  <a href="#2b78ab760bb1ff185c2f4d57102752dc"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Fonctions membres publiques statiques</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_carte.html#2087f36a5ff3636ec62dc083805beaf9">dessiner</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">fonction à implémenter pour définir la géométrie openGL de la carte d'identité de poly (est statique, car est référée par un pointeur de fonction)  <a href="#2087f36a5ff3636ec62dc083805beaf9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_carte.html#6daa01a85c6ea89f99e8a8dfd3f570d7">appliquerTextures</a> (void *)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">fonction à implémenter pour personnaliser l'application de texture (à faire aussi : dans le constructeur, appeler "construire(&amp;dessiner, &amp;appliquerTextures)"  <a href="#6daa01a85c6ea89f99e8a8dfd3f570d7"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Fonctions membres privées statiques</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_carte.html#b6dd94e37d06df917139deae9b190d03">appliquerBruitPerlin</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">fonction personnalisée qui applique le bruit de perlin  <a href="#b6dd94e37d06df917139deae9b190d03"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_carte.html#5ec50b843e8d5b87e999ea97b4dd6936">dessinerGrilleDeQuads</a> (float largeur, float hauteur, int nbRangees, int nbColonnes, bool normaleVersExt)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">fonction privée de création du maillage de la carte  <a href="#5ec50b843e8d5b87e999ea97b4dd6936"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Attributs privés statiques</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_carte.html#cc7be625b47395d55df3fd35bbabde4d">largeur_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">la largeur de la carte, en unités d'objet  <a href="#cc7be625b47395d55df3fd35bbabde4d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_carte.html#e98479648079a77f2048b96698aad005">hauteur_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">la hauteur de la carte, en unités d'objet  <a href="#e98479648079a77f2048b96698aad005"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_carte.html#5dc7c124c33ad440e614dd455216503d">nbRangees_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">le nombre de divisions verticales du maillage de la carte  <a href="#5dc7c124c33ad440e614dd455216503d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_carte.html#1f95ff3b54ce65383b249defaa49b41d">nbColonnes_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">le nombre de divisions horizontales du maillage de la carte  <a href="#1f95ff3b54ce65383b249defaa49b41d"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>Description détaillée</h2>
+<a class="el" href="class_c_carte.html">CCarte</a> Cette classe encapsule l'objet grpahique principal du TP : une carte d'identité de poly<p>
+Base class <a class="el" href="class_c_modele3_d_abstrait.html">CModele3DAbstrait</a> La classe de base encapsule tout modèle 3D openGL<p>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-03-11 </dd></dl>
+
+<p>
+<hr><h2>Documentation des contructeurs et destructeur</h2>
+<a class="anchor" name="81dd7e1f691db1e955e008364b3b1871"></a><!-- doxytag: member="CCarte::CCarte" ref="81dd7e1f691db1e955e008364b3b1871" args="(char *nomFichierTexture, float largeur, float hauteur, int nbColonnes, int nbRangees, float echelle=1.0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CCarte::CCarte           </td>
+          <td>(</td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>nomFichierTexture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>largeur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>hauteur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>nbColonnes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>nbRangees</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>echelle</em> = <code>1.0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+constructeur spécifique pour création d'une carte ne comportant qu'une seule texture 
+<p>
+public overloaded constructor <a class="el" href="class_c_carte.html">CCarte</a> <br>
+ constructeur d'une carte d'identité poly avec 1 seule texture (utile seulement pour faire des tests du côté openGL... pas utile pour le labo en tant que tel...<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in,out]</tt>&nbsp;</td><td valign="top"><em>nomFichierTexture</em>&nbsp;</td><td>char * l'unique nom de fichier de l'unique texture </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>largeur</em>&nbsp;</td><td>float largeur de la carte </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>hauteur</em>&nbsp;</td><td>float hauteur de la carte </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>nbColonnes</em>&nbsp;</td><td>int nombre de colonnes du maillage </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>nbRangees</em>&nbsp;</td><td>int nombre de rangées du maillage </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>echelle</em>&nbsp;</td><td>float [=1.000000] mise à l'échelle qui sera appliquée automatique (glScale)</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-02-20 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d928546c80885cb5c825ff25ade65347"></a><!-- doxytag: member="CCarte::CCarte" ref="d928546c80885cb5c825ff25ade65347" args="(std::vector&lt; char * &gt; *nomsFichiersTextures, float largeur, float hauteur, int nbColonnes, int nbRangees, float echelle=1.0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CCarte::CCarte           </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; char * &gt; *&nbsp;</td>
+          <td class="paramname"> <em>nomsFichiersTextures</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>largeur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>hauteur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>nbColonnes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>nbRangees</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>echelle</em> = <code>1.0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+constructeur spécifique pour création d'une carte comportant plusieurs textures 
+<p>
+public overloaded constructor <a class="el" href="class_c_carte.html">CCarte</a> <br>
+ constructeur d'une carte d'identité poly avec plusieurs textures. Cette version est utile pour le laboratoire, car on peut spécifier en première texture la texture du Recto, en deuxième le Verso... pour la troisième, la normal map de perlin, on ne pourra pas la spécifier ici, car elle ne sera pas lue à partir du disque, mais bien construite de façon procédurale dans le programme... donc on devra la construire manuellement.<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in,out]</tt>&nbsp;</td><td valign="top"><em>nomsFichiersTextures</em>&nbsp;</td><td>std::vector&lt;char*&gt; * Le vecteur contenant la liste des noms de fichiers. Cette liste est copiée, alors l'appelant peut en disposer. </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>largeur</em>&nbsp;</td><td>float largeur de la carte </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>hauteur</em>&nbsp;</td><td>float hauteur de la carte </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>nbColonnes</em>&nbsp;</td><td>int nombre de colonnes du maillage </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>nbRangees</em>&nbsp;</td><td>int nombre de rangées du maillage </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>echelle</em>&nbsp;</td><td>float [=1.000000] mise à l'échelle qui sera appliquée automatique (glScale)</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-02-20 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="2b78ab760bb1ff185c2f4d57102752dc"></a><!-- doxytag: member="CCarte::~CCarte" ref="2b78ab760bb1ff185c2f4d57102752dc" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CCarte::~CCarte           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+destructeur par défaut 
+<p>
+public destructor ~CCarte <br>
+ Destructeur par défaut.<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-02-20 </dd></dl>
+
+</div>
+</div><p>
+<hr><h2>Documentation des fonctions membres</h2>
+<a class="anchor" name="b6dd94e37d06df917139deae9b190d03"></a><!-- doxytag: member="CCarte::appliquerBruitPerlin" ref="b6dd94e37d06df917139deae9b190d03" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CCarte::appliquerBruitPerlin           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+fonction personnalisée qui applique le bruit de perlin 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="6daa01a85c6ea89f99e8a8dfd3f570d7"></a><!-- doxytag: member="CCarte::appliquerTextures" ref="6daa01a85c6ea89f99e8a8dfd3f570d7" args="(void *)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CCarte::appliquerTextures           </td>
+          <td>(</td>
+          <td class="paramtype">void *&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+fonction à implémenter pour personnaliser l'application de texture (à faire aussi : dans le constructeur, appeler "construire(&amp;dessiner, &amp;appliquerTextures)" 
+<p>
+public static appliquerTextures <br>
+ Fonction à implémenter si l'utilisateur désire remplacer (override) l'application des textures. Ceci sera surtout utile du côté openGL si un texturage autre que modulate est désiré... Pour le lab, purement en GLSL, cette fonctionnalité ne sera pas très utile, car on applique la texture DANS les shaders.<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-02-20 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="2087f36a5ff3636ec62dc083805beaf9"></a><!-- doxytag: member="CCarte::dessiner" ref="2087f36a5ff3636ec62dc083805beaf9" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CCarte::dessiner           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+fonction à implémenter pour définir la géométrie openGL de la carte d'identité de poly (est statique, car est référée par un pointeur de fonction) 
+<p>
+public static dessiner <br>
+ Fonction à implémenter absolument si on veut voir apparaître quelque chose ! cette fonction sera appelée par la classe de base (<a class="el" href="class_c_modele3_d_abstrait.html">CModele3DAbstrait</a>) par l'entremise d'une pointeur de fonction passé à la construction. On mettra ici uniquement le graphisme associé à l'objet (i.e. glBegin()...glVertex(), etc...)<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-02-20 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="5ec50b843e8d5b87e999ea97b4dd6936"></a><!-- doxytag: member="CCarte::dessinerGrilleDeQuads" ref="5ec50b843e8d5b87e999ea97b4dd6936" args="(float largeur, float hauteur, int nbRangees, int nbColonnes, bool normaleVersExt)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CCarte::dessinerGrilleDeQuads           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>largeur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>hauteur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>nbRangees</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>nbColonnes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>normaleVersExt</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+fonction privée de création du maillage de la carte 
+<p>
+private static dessinerGrilleDeQuads <br>
+ Fonction privée utilitaire appelée à l'interne pour générer la grille de quads de la carte d'identité.<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>largeur</em>&nbsp;</td><td>float </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>hauteur</em>&nbsp;</td><td>float </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>nbRangees</em>&nbsp;</td><td>int </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>nbColonnes</em>&nbsp;</td><td>in </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>normaleVersExt</em>&nbsp;</td><td>bool décrit si les normales seront vers nous ou pas.</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-02-20 </dd></dl>
+
+</div>
+</div><p>
+<hr><h2>Documentation des champs</h2>
+<a class="anchor" name="e98479648079a77f2048b96698aad005"></a><!-- doxytag: member="CCarte::hauteur_" ref="e98479648079a77f2048b96698aad005" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_c_carte.html#e98479648079a77f2048b96698aad005">CCarte::hauteur_</a><code> [static, private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+la hauteur de la carte, en unités d'objet 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="cc7be625b47395d55df3fd35bbabde4d"></a><!-- doxytag: member="CCarte::largeur_" ref="cc7be625b47395d55df3fd35bbabde4d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_c_carte.html#cc7be625b47395d55df3fd35bbabde4d">CCarte::largeur_</a><code> [static, private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+la largeur de la carte, en unités d'objet 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="1f95ff3b54ce65383b249defaa49b41d"></a><!-- doxytag: member="CCarte::nbColonnes_" ref="1f95ff3b54ce65383b249defaa49b41d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_c_carte.html#1f95ff3b54ce65383b249defaa49b41d">CCarte::nbColonnes_</a><code> [static, private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+le nombre de divisions horizontales du maillage de la carte 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="5dc7c124c33ad440e614dd455216503d"></a><!-- doxytag: member="CCarte::nbRangees_" ref="5dc7c124c33ad440e614dd455216503d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_c_carte.html#5dc7c124c33ad440e614dd455216503d">CCarte::nbRangees_</a><code> [static, private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+le nombre de divisions verticales du maillage de la carte 
+<p>
+
+</div>
+</div><p>
+<hr>La documentation de cette classe a été générée à partir des fichiers suivants:<ul>
+<li><a class="el" href="_carte_8h.html">Carte.h</a><li><a class="el" href="_carte_8cpp.html">Carte.cpp</a></ul>
+<hr size="1"><address style="align: right;"><small>Généré le Wed Sep 17 08:56:43 2008 pour TP3v1 par&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>

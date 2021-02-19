@@ -1,0 +1,658 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>TP3v1: Référence de la classe CNuanceurProg</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Généré par Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+    <li><a href="modules.html"><span>Modules</span></a></li>
+    <li id="current"><a href="annotated.html"><span>Structures&nbsp;de&nbsp;données</span></a></li>
+    <li><a href="files.html"><span>Fichiers</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>Structures&nbsp;de&nbsp;données</span></a></li>
+    <li><a href="hierarchy.html"><span>Hiérarchie&nbsp;des&nbsp;classes</span></a></li>
+    <li><a href="functions.html"><span>Champs&nbsp;de&nbsp;donnée</span></a></li>
+  </ul></div>
+<h1>Référence de la classe CNuanceurProg</h1><!-- doxytag: class="CNuanceurProg" -->Classe qui encapsule un programme de nuanceurs (1 programme + 1 ou 2 nuanceurs).  
+<a href="#_details">Plus de détails...</a>
+<p>
+<code>#include &lt;NuanceurProg.h&gt;</code>
+<p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Fonctions membres publiques</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_nuanceur_prog.html#ef4ab2175e4ce16518f7b6f20afb6861">CNuanceurProg</a> (void)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">constructeur par défaut : utilisé pour créer un PROGRAMME VKDE de nuanceur (0)  <a href="#ef4ab2175e4ce16518f7b6f20afb6861"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_nuanceur_prog.html#4192590f8de1ee737f5eddc3c444df66">CNuanceurProg</a> (char *nuanceurSommetsStr, char *nuanceurFragmentsStr, bool compilerImmediatement)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">constructeur spécifique : utilisé pour créer un PROGRAMME DE NUANCEURS.  <a href="#4192590f8de1ee737f5eddc3c444df66"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_nuanceur_prog.html#c3fcbdc1de8f8a2b6bb05c7d62d19563">~CNuanceurProg</a> (void)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">destructeur par défaut.  <a href="#c3fcbdc1de8f8a2b6bb05c7d62d19563"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_nuanceur_prog.html#355852aa790dd78871bb9acf65f3cfa8">compilerEtLier</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">compile et lie dans openGL les nuanceurs du programme  <a href="#355852aa790dd78871bb9acf65f3cfa8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_nuanceur_prog.html#f4069a45c5143f184c8468858c900d2e">activer</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Activer le nuanceur dans openGL.  <a href="#f4069a45c5143f184c8468858c900d2e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_nuanceur_prog.html#62f96bc1cec10b5ada5422b371bef51d">uniform1</a> (char *nom, int v)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Permet de lancer une valeur uniform (int) immédiatement.  <a href="#62f96bc1cec10b5ada5422b371bef51d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_nuanceur_prog.html#1472729694ef8119ac3c9fe5cdeae07c">uniform1</a> (char *nom, float v)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Permet de lancer une valeur uniform (float) immédiatement.  <a href="#1472729694ef8119ac3c9fe5cdeae07c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_nuanceur_prog.html#a97b9a004d8467ed9437ea43a2b58930">enregistrerUniformFloat</a> (const char *nom, const float &amp;val)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Enregistre au sein du programme un uniform float qui sera inscrit à l'activation du nuanceur.  <a href="#a97b9a004d8467ed9437ea43a2b58930"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_nuanceur_prog.html#e1760389e764ccdfba79b44689280deb">enregistrerUniformInteger</a> (const char *nom, const int &amp;val)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Enregistre au sein du programme un uniform entier qui sera inscrit à l'activation du nuanceur.  <a href="#e1760389e764ccdfba79b44689280deb"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GLuint&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_nuanceur_prog.html#5ba9ed4e33c362f55b18494316acad69">getProg</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retourne l'identificateur du programme de nuanceurs pour utiliser externe spécifique.  <a href="#5ba9ed4e33c362f55b18494316acad69"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Fonctions membres privées</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_nuanceur_prog.html#7c7611a60c15c44ecda824bd0ee82a76">compilerEtLierNuanceurs</a> (char *nsStr, char *nfStr)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Compile et lie les nuanceurs définis à la construction.  <a href="#7c7611a60c15c44ecda824bd0ee82a76"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_nuanceur_prog.html#43796bec039fe6961d56f101bac36d61">afficherShaderInfoLog</a> (GLuint obj, char *message)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Affiche les informations de compilation d'un nuanceur.  <a href="#43796bec039fe6961d56f101bac36d61"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_nuanceur_prog.html#313c7441f27959a686de6aeb6aa7e8a7">afficherProgramInfoLog</a> (GLuint obj, char *message)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Affiche les informations de compilation et d'édition de liens (link) du programme de nuanceurs.  <a href="#313c7441f27959a686de6aeb6aa7e8a7"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Attributs privés</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_nuanceur_prog.html#af3046586033cc81d940463634393ce4">nuanceurSommetsStr_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">la chaîne de caractères du nom de fichier du nuanceur de sommets  <a href="#af3046586033cc81d940463634393ce4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_nuanceur_prog.html#d5230b46056c34836e4f10fdb29622d2">nuanceurFragmentsStr_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">la chaîne de caractères du nom de fichier du nuanceur de fragments  <a href="#d5230b46056c34836e4f10fdb29622d2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">std::vector&lt; <a class="el" href="structfloat_uniform.html">floatUniform</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_nuanceur_prog.html#f2f9de08bf67fa1a5de11a3a2cb6bef9">floatUniforms_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">la liste des uniforms float requis par les nuanceurs  <a href="#f2f9de08bf67fa1a5de11a3a2cb6bef9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">std::vector&lt; <a class="el" href="structinteger_uniform.html">integerUniform</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_nuanceur_prog.html#05c781f94a439ce84d27966580709e1e">integerUniforms_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">la liste des uniforms integer requis par les nuanceurs  <a href="#05c781f94a439ce84d27966580709e1e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_nuanceur_prog.html#33f4603626314130e18022dc2f2189b3">estVide_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">indique si le programme en cours est vide (fonctionalité fixe d'openGL)  <a href="#33f4603626314130e18022dc2f2189b3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_nuanceur_prog.html#e9695f50af65a64e1745ac8cf3bd47f6">estCompileEtLie_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indique si les nuanceurs du programme ont été compilés et linkés.  <a href="#e9695f50af65a64e1745ac8cf3bd47f6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GLuint&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_nuanceur_prog.html#efa68be4112c3b7105f61922a4017f26">prog_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">l'identificateur du programme de nuanceurs  <a href="#efa68be4112c3b7105f61922a4017f26"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>Description détaillée</h2>
+Classe qui encapsule un programme de nuanceurs (1 programme + 1 ou 2 nuanceurs). 
+<p>
+<dl compact><dt><b>Remarques:</b></dt><dd>le programme de nuanceur peut être vide (0 nuanceurs) pour simuler la fonctionalité fixe d'openGL</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-12 </dd></dl>
+
+<p>
+<hr><h2>Documentation des contructeurs et destructeur</h2>
+<a class="anchor" name="ef4ab2175e4ce16518f7b6f20afb6861"></a><!-- doxytag: member="CNuanceurProg::CNuanceurProg" ref="ef4ab2175e4ce16518f7b6f20afb6861" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CNuanceurProg::CNuanceurProg           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+constructeur par défaut : utilisé pour créer un PROGRAMME VKDE de nuanceur (0) 
+<p>
+public overloaded constructor <a class="el" href="class_c_nuanceur_prog.html">CNuanceurProg</a> <br>
+<p>
+Constructeur par défaut utilisé pour créer le programme vide (fixed Functionality d'openGL)<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-12 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="4192590f8de1ee737f5eddc3c444df66"></a><!-- doxytag: member="CNuanceurProg::CNuanceurProg" ref="4192590f8de1ee737f5eddc3c444df66" args="(char *nuanceurSommetsStr, char *nuanceurFragmentsStr, bool compilerImmediatement)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CNuanceurProg::CNuanceurProg           </td>
+          <td>(</td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>nuanceurSommetsStr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>nuanceurFragmentsStr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>compilerMaintenant</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+constructeur spécifique : utilisé pour créer un PROGRAMME DE NUANCEURS. 
+<p>
+global public overloaded <a class="el" href="class_c_nuanceur_prog.html">CNuanceurProg</a> <br>
+<p>
+Constructeur utilisé pour construire un programme de nuanceurs comportant un nuanceur de sommets et/ou un nuanceur de fragments. Peut produire un programme vide (pour fonctionnalité fixe d'openGL).<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>nuanceurSommetsStr</em>&nbsp;</td><td>char * Nom de fichier du nuanceur de sommets (si = 0 (ou NULL) -&gt; pas de nuanceurs de sommets) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>nuanceurFragmentStr</em>&nbsp;</td><td>char * Nom de fichier du nuanceur de fragments(si = 0 -&gt; pas de nuanceurs de fragments) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>compilerMaintenant</em>&nbsp;</td><td>bool Indique si l'on doit compiler les nuanceurs à la construction de l'objet</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>int</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-12 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c3fcbdc1de8f8a2b6bb05c7d62d19563"></a><!-- doxytag: member="CNuanceurProg::~CNuanceurProg" ref="c3fcbdc1de8f8a2b6bb05c7d62d19563" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CNuanceurProg::~CNuanceurProg           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+destructeur par défaut. 
+<p>
+public destructor ~CNuanceurProg <br>
+<p>
+Destructeur par défaut (vide) <dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-12 </dd></dl>
+
+</div>
+</div><p>
+<hr><h2>Documentation des fonctions membres</h2>
+<a class="anchor" name="f4069a45c5143f184c8468858c900d2e"></a><!-- doxytag: member="CNuanceurProg::activer" ref="f4069a45c5143f184c8468858c900d2e" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CNuanceurProg::activer           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Activer le nuanceur dans openGL. 
+<p>
+public activer <br>
+<p>
+Fonction publique qui active le programme de nuanceurs dans openGL La fonction vérifie au préalable si le programme de nuanceurs fut compilé et lié<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-12 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="313c7441f27959a686de6aeb6aa7e8a7"></a><!-- doxytag: member="CNuanceurProg::afficherProgramInfoLog" ref="313c7441f27959a686de6aeb6aa7e8a7" args="(GLuint obj, char *message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CNuanceurProg::afficherProgramInfoLog           </td>
+          <td>(</td>
+          <td class="paramtype">GLuint&nbsp;</td>
+          <td class="paramname"> <em>obj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>message</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Affiche les informations de compilation et d'édition de liens (link) du programme de nuanceurs. 
+<p>
+private afficherProgramInfoLog <br>
+<p>
+Cette fonction sert à afficher les informations de compilation et d'édition de liens (link) du programme de nuanceurs. Elle utilise la fonction "glGetProgramInfoLog()".<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>obj</em>&nbsp;</td><td>GLuint Le programme nuanceurs qui vient d'être créé</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-12 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="43796bec039fe6961d56f101bac36d61"></a><!-- doxytag: member="CNuanceurProg::afficherShaderInfoLog" ref="43796bec039fe6961d56f101bac36d61" args="(GLuint obj, char *message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CNuanceurProg::afficherShaderInfoLog           </td>
+          <td>(</td>
+          <td class="paramtype">GLuint&nbsp;</td>
+          <td class="paramname"> <em>obj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>message</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Affiche les informations de compilation d'un nuanceur. 
+<p>
+private afficherShaderInfoLog <br>
+<p>
+Cette fonction sert à afficher les informations de compilation d'un nuanceur. Elle utilise la fonction glGetShaderInfoLog()".<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>obj</em>&nbsp;</td><td>GLuint Le programme nuanceurs qui vient d'être créé</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-12 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="355852aa790dd78871bb9acf65f3cfa8"></a><!-- doxytag: member="CNuanceurProg::compilerEtLier" ref="355852aa790dd78871bb9acf65f3cfa8" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CNuanceurProg::compilerEtLier           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+compile et lie dans openGL les nuanceurs du programme 
+<p>
+global public compilerEtLier <br>
+<p>
+Compile et lie les nuanceurs (dans openGL). Vérifie au préalable si les nuanceurs de sommets et de fragments furent définis, car un nuanceur vide (pour la "fixed functionality d'openGL") ne se compile pas.<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-12 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="7c7611a60c15c44ecda824bd0ee82a76"></a><!-- doxytag: member="CNuanceurProg::compilerEtLierNuanceurs" ref="7c7611a60c15c44ecda824bd0ee82a76" args="(char *nsStr, char *nfStr)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CNuanceurProg::compilerEtLierNuanceurs           </td>
+          <td>(</td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>nsStr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>nfStr</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Compile et lie les nuanceurs définis à la construction. 
+<p>
+private compilerEtLierNuanceurs <br>
+<p>
+Lance la compilation et l'édition des liens (link) des différents nuanceurs spécifiés (!= NULL). Crée aussi le programme de nuanceurs.<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in,out]</tt>&nbsp;</td><td valign="top"><em>nsStr</em>&nbsp;</td><td>char * le nom de fichier du nuanceur de sommets </td></tr>
+    <tr><td valign="top"><tt>[in,out]</tt>&nbsp;</td><td valign="top"><em>nfStr</em>&nbsp;</td><td>char * le nom de fichier du nuanceur de fragments</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-12 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a97b9a004d8467ed9437ea43a2b58930"></a><!-- doxytag: member="CNuanceurProg::enregistrerUniformFloat" ref="a97b9a004d8467ed9437ea43a2b58930" args="(const char *nom, const float &amp;val)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CNuanceurProg::enregistrerUniformFloat           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>nom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float &amp;&nbsp;</td>
+          <td class="paramname"> <em>val</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Enregistre au sein du programme un uniform float qui sera inscrit à l'activation du nuanceur. 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="e1760389e764ccdfba79b44689280deb"></a><!-- doxytag: member="CNuanceurProg::enregistrerUniformInteger" ref="e1760389e764ccdfba79b44689280deb" args="(const char *nom, const int &amp;val)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CNuanceurProg::enregistrerUniformInteger           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>nom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&nbsp;</td>
+          <td class="paramname"> <em>val</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Enregistre au sein du programme un uniform entier qui sera inscrit à l'activation du nuanceur. 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="5ba9ed4e33c362f55b18494316acad69"></a><!-- doxytag: member="CNuanceurProg::getProg" ref="5ba9ed4e33c362f55b18494316acad69" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint CNuanceurProg::getProg           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Retourne l'identificateur du programme de nuanceurs pour utiliser externe spécifique. 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="1472729694ef8119ac3c9fe5cdeae07c"></a><!-- doxytag: member="CNuanceurProg::uniform1" ref="1472729694ef8119ac3c9fe5cdeae07c" args="(char *nom, float v)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CNuanceurProg::uniform1           </td>
+          <td>(</td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>nom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>v</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Permet de lancer une valeur uniform (float) immédiatement. 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="62f96bc1cec10b5ada5422b371bef51d"></a><!-- doxytag: member="CNuanceurProg::uniform1" ref="62f96bc1cec10b5ada5422b371bef51d" args="(char *nom, int v)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CNuanceurProg::uniform1           </td>
+          <td>(</td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>nom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>v</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Permet de lancer une valeur uniform (int) immédiatement. 
+<p>
+
+</div>
+</div><p>
+<hr><h2>Documentation des champs</h2>
+<a class="anchor" name="e9695f50af65a64e1745ac8cf3bd47f6"></a><!-- doxytag: member="CNuanceurProg::estCompileEtLie_" ref="e9695f50af65a64e1745ac8cf3bd47f6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_c_nuanceur_prog.html#e9695f50af65a64e1745ac8cf3bd47f6">CNuanceurProg::estCompileEtLie_</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Indique si les nuanceurs du programme ont été compilés et linkés. 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="33f4603626314130e18022dc2f2189b3"></a><!-- doxytag: member="CNuanceurProg::estVide_" ref="33f4603626314130e18022dc2f2189b3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_c_nuanceur_prog.html#33f4603626314130e18022dc2f2189b3">CNuanceurProg::estVide_</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+indique si le programme en cours est vide (fonctionalité fixe d'openGL) 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="f2f9de08bf67fa1a5de11a3a2cb6bef9"></a><!-- doxytag: member="CNuanceurProg::floatUniforms_" ref="f2f9de08bf67fa1a5de11a3a2cb6bef9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structfloat_uniform.html">floatUniform</a>&gt; <a class="el" href="class_c_nuanceur_prog.html#f2f9de08bf67fa1a5de11a3a2cb6bef9">CNuanceurProg::floatUniforms_</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+la liste des uniforms float requis par les nuanceurs 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="05c781f94a439ce84d27966580709e1e"></a><!-- doxytag: member="CNuanceurProg::integerUniforms_" ref="05c781f94a439ce84d27966580709e1e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structinteger_uniform.html">integerUniform</a>&gt; <a class="el" href="class_c_nuanceur_prog.html#05c781f94a439ce84d27966580709e1e">CNuanceurProg::integerUniforms_</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+la liste des uniforms integer requis par les nuanceurs 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="d5230b46056c34836e4f10fdb29622d2"></a><!-- doxytag: member="CNuanceurProg::nuanceurFragmentsStr_" ref="d5230b46056c34836e4f10fdb29622d2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* <a class="el" href="class_c_nuanceur_prog.html#d5230b46056c34836e4f10fdb29622d2">CNuanceurProg::nuanceurFragmentsStr_</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+la chaîne de caractères du nom de fichier du nuanceur de fragments 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="af3046586033cc81d940463634393ce4"></a><!-- doxytag: member="CNuanceurProg::nuanceurSommetsStr_" ref="af3046586033cc81d940463634393ce4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* <a class="el" href="class_c_nuanceur_prog.html#af3046586033cc81d940463634393ce4">CNuanceurProg::nuanceurSommetsStr_</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+la chaîne de caractères du nom de fichier du nuanceur de sommets 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="efa68be4112c3b7105f61922a4017f26"></a><!-- doxytag: member="CNuanceurProg::prog_" ref="efa68be4112c3b7105f61922a4017f26" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint <a class="el" href="class_c_nuanceur_prog.html#efa68be4112c3b7105f61922a4017f26">CNuanceurProg::prog_</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+l'identificateur du programme de nuanceurs 
+<p>
+
+</div>
+</div><p>
+<hr>La documentation de cette classe a été générée à partir des fichiers suivants:<ul>
+<li><a class="el" href="_nuanceur_prog_8h.html">NuanceurProg.h</a><li><a class="el" href="_nuanceur_prog_8cpp.html">NuanceurProg.cpp</a></ul>
+<hr size="1"><address style="align: right;"><small>Généré le Wed Sep 17 08:56:44 2008 pour TP3v1 par&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>

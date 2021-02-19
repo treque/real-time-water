@@ -1,0 +1,534 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>TP3v1: Référence de la classe CVar</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Généré par Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+    <li><a href="modules.html"><span>Modules</span></a></li>
+    <li id="current"><a href="annotated.html"><span>Structures&nbsp;de&nbsp;données</span></a></li>
+    <li><a href="files.html"><span>Fichiers</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>Structures&nbsp;de&nbsp;données</span></a></li>
+    <li><a href="hierarchy.html"><span>Hiérarchie&nbsp;des&nbsp;classes</span></a></li>
+    <li><a href="functions.html"><span>Champs&nbsp;de&nbsp;donnée</span></a></li>
+  </ul></div>
+<h1>Référence de la classe CVar</h1><!-- doxytag: class="CVar" --><!-- doxytag: inherits="Singleton&lt; CVar &gt;" -->Les VARIABLES globales du programme. C'est une classe singleton.  
+<a href="#_details">Plus de détails...</a>
+<p>
+<code>#include &lt;Var.h&gt;</code>
+<p>
+Est dérivée de <a class="el" href="class_singleton.html">Singleton&lt; CVar &gt;</a>.
+<p>
+Graphe d'héritage de CVar:<p><center><img src="class_c_var__inherit__graph.png" border="0" usemap="#_c_var__inherit__map" alt="Inheritance graph"></center>
+<map name="_c_var__inherit__map">
+<area href="class_singleton.html" shape="rect" coords="5,5,136,32" alt="">
+</map>
+<center><font size="2">[<a href="graph_legend.html">légende</a>]</font></center>Graphe de collaboration de CVar:<p><center><img src="class_c_var__coll__graph.png" border="0" usemap="#_c_var__coll__map" alt="Collaboration graph"></center>
+<map name="_c_var__coll__map">
+<area href="class_singleton.html" shape="rect" coords="5,96,136,123" alt="">
+</map>
+<center><font size="2">[<a href="graph_legend.html">légende</a>]</font></center><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Attributs publics statiques</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_var.html#7aea00ac277aa2869ce567c2df448d9f">axesOn</a> = true</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">indique si l'on veut afficher les axes  <a href="#7aea00ac277aa2869ce567c2df448d9f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_var.html#51d70f246c1a3d0a94cd129c3a89fa18">fogOn</a> = true</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">indique si l'on veut activer le brouillard  <a href="#51d70f246c1a3d0a94cd129c3a89fa18"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_var.html#84ccbd32002a1a0fa9fe58ae753617b1">animModeleOn</a> = false</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">indique si on désire activer l'animation du modèle  <a href="#84ccbd32002a1a0fa9fe58ae753617b1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_var.html#adb9ce9c5eb78fa539c3b97cb148c7a4">rotAutoOn</a> = false</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">indique si on désire activer la rotation automatique du modèle  <a href="#adb9ce9c5eb78fa539c3b97cb148c7a4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_var.html#25552b6dab6cd42f6b953e5a13fd7687">perlinOn</a> = true</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">indique si on désire activer la bump mapping de perlin  <a href="#25552b6dab6cd42f6b953e5a13fd7687"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_var.html#4eb0c7b64020f356ef60fcdb09a963da">minFilter</a> = 0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indique le filtre à utiliser pour le minFilter (utilisé comme index à <a class="el" href="class_c_cst.html#be11eaa07b93ef50e12d04f0fbfd5e4d">CCst::mapFilters</a>[]).  <a href="#4eb0c7b64020f356ef60fcdb09a963da"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_var.html#b5d404714bb4a49507a2ba9b268edf0f">magFilter</a> = 0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indique le filtre à utiliser pour le minFilter (utilisé comme index à <a class="el" href="class_c_cst.html#be11eaa07b93ef50e12d04f0fbfd5e4d">CCst::mapFilters</a>[]).  <a href="#b5d404714bb4a49507a2ba9b268edf0f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_var.html#d7689d2187e9bb12a5fc3d3fa98d0e61">g_nWindowID</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">le ID de la fenêtre graphique GLUT  <a href="#d7689d2187e9bb12a5fc3d3fa98d0e61"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_var.html#c65d7875bfaceaede1706f745e17ba8f">currentW</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Largeur et hauteur courantes de la fenêtre graphique (viewport).  <a href="#c65d7875bfaceaede1706f745e17ba8f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_var.html#9288f6727350fcaedbbe0c3c1778b00a">isPerspective</a> = true</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">indique si on est en mode Perspective (true) ou glOrtho (false)  <a href="#9288f6727350fcaedbbe0c3c1778b00a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_var.html#9ef0523d2fc103260a2ed93dbdf4807b">theta</a> = DEG2RAD(270.0f)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">angle de rotation de la caméra en theta (coord. sphériques)  <a href="#9ef0523d2fc103260a2ed93dbdf4807b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_var.html#3763aa253f2cfb6546bf0818a5a92e90">phi</a> = DEG2RAD(90.0f)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">angle de rotation de la caméra en phi (coord. sphériques)  <a href="#3763aa253f2cfb6546bf0818a5a92e90"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_var.html#65567c3051245fbe6e1de8fdd4e4fe33">rho</a> = 30.0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">angle de rotation de la caméra en rho (coord. sphériques)  <a href="#65567c3051245fbe6e1de8fdd4e4fe33"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_var.html#e55569f3d0b61e513fe2144a30433723">x</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">la position de la camera en X  <a href="#e55569f3d0b61e513fe2144a30433723"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_var.html#b92eec5d859608a6f83076e580bd9436">y</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">la position de la camera en Y  <a href="#b92eec5d859608a6f83076e580bd9436"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_var.html#6ca3af58b4b9753a74c191d49658db63">z</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">la position de la camera en Z  <a href="#6ca3af58b4b9753a74c191d49658db63"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_var.html#d39d6b29627329155500880db354e927">angleRotX</a> = 0.0f</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">angle courant de rotation en X du modèle  <a href="#d39d6b29627329155500880db354e927"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_var.html#0931c6d1a6804cc463ed614e39fd1e80">angleRotY</a> = 0.0f</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">angle courant de rotation en Y du modèle  <a href="#0931c6d1a6804cc463ed614e39fd1e80"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_var.html#1e3b843131f6ba3610de9aef23a127ee">angleRotZ</a> = 0.0f</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">angle courant de rotation en Z du modèle  <a href="#1e3b843131f6ba3610de9aef23a127ee"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_var.html#bec6d32965994a54488c29fdb6d2ab52">premierMouvement</a> = true</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">indique si la souris fut bougée déjà  <a href="#bec6d32965994a54488c29fdb6d2ab52"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_var.html#5f78864221fb9eec35865b95370bfd1e">dernierX</a> = 0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">la dernière valeur en X de position lue de la souris  <a href="#5f78864221fb9eec35865b95370bfd1e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_var.html#9e1380f93850e25b212c59cf94bb9124">dernierY</a> = 0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">la derniere valeur en Y de position lus de la souris  <a href="#9e1380f93850e25b212c59cf94bb9124"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static GLuint&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_var.html#f03fbef062c952aee0bc3ea60d92e7c1">listeAffModele</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">déclaration de la liste d'affichage du modèle  <a href="#f03fbef062c952aee0bc3ea60d92e7c1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static GLuint&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_var.html#72485c4137bad586a30faec2e8696414">perlinTex</a> = 0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">la texture de perlin  <a href="#72485c4137bad586a30faec2e8696414"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>Description détaillée</h2>
+Les VARIABLES globales du programme. C'est une classe singleton. 
+<p>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-12-11 </dd></dl>
+
+<p>
+<hr><h2>Documentation des champs</h2>
+<a class="anchor" name="d39d6b29627329155500880db354e927"></a><!-- doxytag: member="CVar::angleRotX" ref="d39d6b29627329155500880db354e927" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_c_var.html#d39d6b29627329155500880db354e927">CVar::angleRotX</a> = 0.0f<code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+angle courant de rotation en X du modèle 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="0931c6d1a6804cc463ed614e39fd1e80"></a><!-- doxytag: member="CVar::angleRotY" ref="0931c6d1a6804cc463ed614e39fd1e80" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_c_var.html#0931c6d1a6804cc463ed614e39fd1e80">CVar::angleRotY</a> = 0.0f<code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+angle courant de rotation en Y du modèle 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="1e3b843131f6ba3610de9aef23a127ee"></a><!-- doxytag: member="CVar::angleRotZ" ref="1e3b843131f6ba3610de9aef23a127ee" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_c_var.html#1e3b843131f6ba3610de9aef23a127ee">CVar::angleRotZ</a> = 0.0f<code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+angle courant de rotation en Z du modèle 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="84ccbd32002a1a0fa9fe58ae753617b1"></a><!-- doxytag: member="CVar::animModeleOn" ref="84ccbd32002a1a0fa9fe58ae753617b1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_var.html#84ccbd32002a1a0fa9fe58ae753617b1">CVar::animModeleOn</a> = false<code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+indique si on désire activer l'animation du modèle 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="7aea00ac277aa2869ce567c2df448d9f"></a><!-- doxytag: member="CVar::axesOn" ref="7aea00ac277aa2869ce567c2df448d9f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_var.html#7aea00ac277aa2869ce567c2df448d9f">CVar::axesOn</a> = true<code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+indique si l'on veut afficher les axes 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="c65d7875bfaceaede1706f745e17ba8f"></a><!-- doxytag: member="CVar::currentW" ref="c65d7875bfaceaede1706f745e17ba8f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_var.html#c65d7875bfaceaede1706f745e17ba8f">CVar::currentW</a><code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Largeur et hauteur courantes de la fenêtre graphique (viewport). 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="5f78864221fb9eec35865b95370bfd1e"></a><!-- doxytag: member="CVar::dernierX" ref="5f78864221fb9eec35865b95370bfd1e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_var.html#5f78864221fb9eec35865b95370bfd1e">CVar::dernierX</a> = 0<code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+la dernière valeur en X de position lue de la souris 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="9e1380f93850e25b212c59cf94bb9124"></a><!-- doxytag: member="CVar::dernierY" ref="9e1380f93850e25b212c59cf94bb9124" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_var.html#9e1380f93850e25b212c59cf94bb9124">CVar::dernierY</a> = 0<code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+la derniere valeur en Y de position lus de la souris 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="51d70f246c1a3d0a94cd129c3a89fa18"></a><!-- doxytag: member="CVar::fogOn" ref="51d70f246c1a3d0a94cd129c3a89fa18" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_var.html#51d70f246c1a3d0a94cd129c3a89fa18">CVar::fogOn</a> = true<code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+indique si l'on veut activer le brouillard 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="d7689d2187e9bb12a5fc3d3fa98d0e61"></a><!-- doxytag: member="CVar::g_nWindowID" ref="d7689d2187e9bb12a5fc3d3fa98d0e61" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_var.html#d7689d2187e9bb12a5fc3d3fa98d0e61">CVar::g_nWindowID</a><code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+le ID de la fenêtre graphique GLUT 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="9288f6727350fcaedbbe0c3c1778b00a"></a><!-- doxytag: member="CVar::isPerspective" ref="9288f6727350fcaedbbe0c3c1778b00a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_c_var.html#9288f6727350fcaedbbe0c3c1778b00a">CVar::isPerspective</a> = true<code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+indique si on est en mode Perspective (true) ou glOrtho (false) 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="f03fbef062c952aee0bc3ea60d92e7c1"></a><!-- doxytag: member="CVar::listeAffModele" ref="f03fbef062c952aee0bc3ea60d92e7c1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint <a class="el" href="class_c_var.html#f03fbef062c952aee0bc3ea60d92e7c1">CVar::listeAffModele</a><code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+déclaration de la liste d'affichage du modèle 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="b5d404714bb4a49507a2ba9b268edf0f"></a><!-- doxytag: member="CVar::magFilter" ref="b5d404714bb4a49507a2ba9b268edf0f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_var.html#b5d404714bb4a49507a2ba9b268edf0f">CVar::magFilter</a> = 0<code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Indique le filtre à utiliser pour le minFilter (utilisé comme index à <a class="el" href="class_c_cst.html#be11eaa07b93ef50e12d04f0fbfd5e4d">CCst::mapFilters</a>[]). 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="4eb0c7b64020f356ef60fcdb09a963da"></a><!-- doxytag: member="CVar::minFilter" ref="4eb0c7b64020f356ef60fcdb09a963da" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_var.html#4eb0c7b64020f356ef60fcdb09a963da">CVar::minFilter</a> = 0<code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Indique le filtre à utiliser pour le minFilter (utilisé comme index à <a class="el" href="class_c_cst.html#be11eaa07b93ef50e12d04f0fbfd5e4d">CCst::mapFilters</a>[]). 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="25552b6dab6cd42f6b953e5a13fd7687"></a><!-- doxytag: member="CVar::perlinOn" ref="25552b6dab6cd42f6b953e5a13fd7687" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_var.html#25552b6dab6cd42f6b953e5a13fd7687">CVar::perlinOn</a> = true<code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+indique si on désire activer la bump mapping de perlin 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="72485c4137bad586a30faec2e8696414"></a><!-- doxytag: member="CVar::perlinTex" ref="72485c4137bad586a30faec2e8696414" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint <a class="el" href="class_c_var.html#72485c4137bad586a30faec2e8696414">CVar::perlinTex</a> = 0<code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+la texture de perlin 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="3763aa253f2cfb6546bf0818a5a92e90"></a><!-- doxytag: member="CVar::phi" ref="3763aa253f2cfb6546bf0818a5a92e90" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="class_c_var.html#3763aa253f2cfb6546bf0818a5a92e90">CVar::phi</a> = DEG2RAD(90.0f)<code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+angle de rotation de la caméra en phi (coord. sphériques) 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="bec6d32965994a54488c29fdb6d2ab52"></a><!-- doxytag: member="CVar::premierMouvement" ref="bec6d32965994a54488c29fdb6d2ab52" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_c_var.html#bec6d32965994a54488c29fdb6d2ab52">CVar::premierMouvement</a> = true<code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+indique si la souris fut bougée déjà 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="65567c3051245fbe6e1de8fdd4e4fe33"></a><!-- doxytag: member="CVar::rho" ref="65567c3051245fbe6e1de8fdd4e4fe33" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="class_c_var.html#65567c3051245fbe6e1de8fdd4e4fe33">CVar::rho</a> = 30.0<code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+angle de rotation de la caméra en rho (coord. sphériques) 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="adb9ce9c5eb78fa539c3b97cb148c7a4"></a><!-- doxytag: member="CVar::rotAutoOn" ref="adb9ce9c5eb78fa539c3b97cb148c7a4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_var.html#adb9ce9c5eb78fa539c3b97cb148c7a4">CVar::rotAutoOn</a> = false<code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+indique si on désire activer la rotation automatique du modèle 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="9ef0523d2fc103260a2ed93dbdf4807b"></a><!-- doxytag: member="CVar::theta" ref="9ef0523d2fc103260a2ed93dbdf4807b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="class_c_var.html#9ef0523d2fc103260a2ed93dbdf4807b">CVar::theta</a> = DEG2RAD(270.0f)<code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+angle de rotation de la caméra en theta (coord. sphériques) 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="e55569f3d0b61e513fe2144a30433723"></a><!-- doxytag: member="CVar::x" ref="e55569f3d0b61e513fe2144a30433723" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_c_var.html#e55569f3d0b61e513fe2144a30433723">CVar::x</a><code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+la position de la camera en X 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="b92eec5d859608a6f83076e580bd9436"></a><!-- doxytag: member="CVar::y" ref="b92eec5d859608a6f83076e580bd9436" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_c_var.html#b92eec5d859608a6f83076e580bd9436">CVar::y</a><code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+la position de la camera en Y 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="6ca3af58b4b9753a74c191d49658db63"></a><!-- doxytag: member="CVar::z" ref="6ca3af58b4b9753a74c191d49658db63" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_c_var.html#6ca3af58b4b9753a74c191d49658db63">CVar::z</a><code> [static]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+la position de la camera en Z 
+<p>
+
+</div>
+</div><p>
+<hr>La documentation de cette classe a été générée à partir des fichiers suivants:<ul>
+<li><a class="el" href="_var_8h.html">Var.h</a><li><a class="el" href="_var_8cpp.html">Var.cpp</a></ul>
+<hr size="1"><address style="align: right;"><small>Généré le Wed Sep 17 08:56:45 2008 pour TP3v1 par&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>

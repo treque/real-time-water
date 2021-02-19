@@ -1,0 +1,239 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>TP3v1: Référence de la classe CTexture2D</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Généré par Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+    <li><a href="modules.html"><span>Modules</span></a></li>
+    <li id="current"><a href="annotated.html"><span>Structures&nbsp;de&nbsp;données</span></a></li>
+    <li><a href="files.html"><span>Fichiers</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>Structures&nbsp;de&nbsp;données</span></a></li>
+    <li><a href="hierarchy.html"><span>Hiérarchie&nbsp;des&nbsp;classes</span></a></li>
+    <li><a href="functions.html"><span>Champs&nbsp;de&nbsp;donnée</span></a></li>
+  </ul></div>
+<h1>Référence de la classe CTexture2D</h1><!-- doxytag: class="CTexture2D" --><!-- doxytag: inherits="CTextureAbstraite" --><code>#include &lt;Texture2D.h&gt;</code>
+<p>
+Est dérivée de <a class="el" href="class_c_texture_abstraite.html">CTextureAbstraite</a>.
+<p>
+Graphe d'héritage de CTexture2D:<p><center><img src="class_c_texture2_d__inherit__graph.png" border="0" usemap="#_c_texture2_d__inherit__map" alt="Inheritance graph"></center>
+<map name="_c_texture2_d__inherit__map">
+<area href="class_c_texture_abstraite.html" shape="rect" coords="5,5,136,32" alt="">
+</map>
+<center><font size="2">[<a href="graph_legend.html">légende</a>]</font></center>Graphe de collaboration de CTexture2D:<p><center><img src="class_c_texture2_d__coll__graph.png" border="0" usemap="#_c_texture2_d__coll__map" alt="Collaboration graph"></center>
+<map name="_c_texture2_d__coll__map">
+<area href="class_c_texture_abstraite.html" shape="rect" coords="5,5,136,32" alt="">
+</map>
+<center><font size="2">[<a href="graph_legend.html">légende</a>]</font></center><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Fonctions membres publiques</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_texture2_d.html#768ece3cb8302512429eafa9ad138ad4">CTexture2D</a> (char *filename, bool mipmap=false)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">constructeur d'une texture 2D openGL (de type GL_TEXTURE_2D) à partir du nom de fichier de la texture  <a href="#768ece3cb8302512429eafa9ad138ad4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_texture2_d.html#e2f4d0cab8a0dc20ed7a00997564e30c">CTexture2D</a> (<a class="el" href="structvect3_d.html">vect3D</a> *data, int hauteur, int largeur, bool mipmap=false)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">constructeur d'une texture 2D openGL à partir d'un poiteur sur des données float  <a href="#e2f4d0cab8a0dc20ed7a00997564e30c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_texture2_d.html#474936b00159fbc40f754682a0ba8b97">~CTexture2D</a> (void)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">destructeur par défaut  <a href="#474936b00159fbc40f754682a0ba8b97"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Fonctions membres privées</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_texture2_d.html#b6ea3e1085e83f5d7aa03e01bc2c6b72">chargerTexture</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">charge la texture en mémoire avec la cible GL_TEXTURE_2D  <a href="#b6ea3e1085e83f5d7aa03e01bc2c6b72"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Attributs privés</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">Image&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_texture2_d.html#46f212c1efd9ee141acd85f47e316d15">TextureImage</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">membre privé temporaire servant la conserver les texels lus du fichier  <a href="#46f212c1efd9ee141acd85f47e316d15"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>Description détaillée</h2>
+<a class="el" href="class_c_texture2_d.html">CTexture2D</a> Cette classe encapsule une texture 2D openGL. (type GL_TEXTURE_2D)<p>
+Base class <a class="el" href="class_c_texture_abstraite.html">CTextureAbstraite</a> &lt;TODO: insérer la description de la classe de base ici&gt;<p>
+<dl compact><dt><b>Remarques:</b></dt><dd>La classe possède deux constructeurs. Un premier ne prenant qu'un nom de fichier, est utile pour charger des images 2D à partir du disque (BMP uniquement !), et uu deuxième, prenant un vect3D* data, est utile pour créer une texture 2D openGL à partir de données déjà existantes en mémoire. à noter cependant que cette version ne prend QUE des <a class="el" href="structvect3_d.html">vect3D</a>, i.e. une texture 2D en format GL_FLOAT. Pour d'autres supports de formats, veuillez ajouter les constructeurs appropriés et le code associé.</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-03-11 &lt;TODO: insérer initiales ici&gt; &lt;TODO: insérer le texte ici&gt; </dd></dl>
+
+<p>
+<hr><h2>Documentation des contructeurs et destructeur</h2>
+<a class="anchor" name="768ece3cb8302512429eafa9ad138ad4"></a><!-- doxytag: member="CTexture2D::CTexture2D" ref="768ece3cb8302512429eafa9ad138ad4" args="(char *filename, bool mipmap=false)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CTexture2D::CTexture2D           </td>
+          <td>(</td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>mipmap</em> = <code>false</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+constructeur d'une texture 2D openGL (de type GL_TEXTURE_2D) à partir du nom de fichier de la texture 
+<p>
+public constructor <a class="el" href="class_c_texture2_d.html">CTexture2D</a> <br>
+ Construit une texture simple 2D (de type GL_TEXTURE_2D). Construit aussi une texture de base abstraite<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in,out]</tt>&nbsp;</td><td valign="top"><em>filename</em>&nbsp;</td><td>char * le nom de fichier de la texture 2D</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-02-20 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e2f4d0cab8a0dc20ed7a00997564e30c"></a><!-- doxytag: member="CTexture2D::CTexture2D" ref="e2f4d0cab8a0dc20ed7a00997564e30c" args="(vect3D *data, int hauteur, int largeur, bool mipmap=false)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CTexture2D::CTexture2D           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structvect3_d.html">vect3D</a> *&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>hauteur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>largeur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>mipmap</em> = <code>false</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+constructeur d'une texture 2D openGL à partir d'un poiteur sur des données float 
+<p>
+public overloaded constructor <a class="el" href="class_c_texture2_d.html">CTexture2D</a> <br>
+ Construit une texture simple 2D (de type GL_TEXTURE_2D) à partir des données brutes de type float (format RGB) et (type GL_FLOAT)<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in,out]</tt>&nbsp;</td><td valign="top"><em>data</em>&nbsp;</td><td><a class="el" href="structvect3_d.html">vect3D</a> * le pointeur sur les données float R-G-B-R-G-B... </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>hauteur</em>&nbsp;</td><td>int la hauteur de la texture </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>largeur</em>&nbsp;</td><td>int la largeur de la texture</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-03-09 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="474936b00159fbc40f754682a0ba8b97"></a><!-- doxytag: member="CTexture2D::~CTexture2D" ref="474936b00159fbc40f754682a0ba8b97" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CTexture2D::~CTexture2D           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+destructeur par défaut 
+<p>
+public destructor ~CTexture2D <br>
+ Destructeur par défaut d'une texture 2D<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-02-20 </dd></dl>
+
+</div>
+</div><p>
+<hr><h2>Documentation des fonctions membres</h2>
+<a class="anchor" name="b6ea3e1085e83f5d7aa03e01bc2c6b72"></a><!-- doxytag: member="CTexture2D::chargerTexture" ref="b6ea3e1085e83f5d7aa03e01bc2c6b72" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CTexture2D::chargerTexture           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [private, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+charge la texture en mémoire avec la cible GL_TEXTURE_2D 
+<p>
+private virtual chargerTexture <br>
+ Charge en mémoire d'application la texture spécifiée au niveau d'openGL.<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-02-20 </dd></dl>
+
+<p>
+Implémente <a class="el" href="class_c_texture_abstraite.html#83e76a2c5459cfabd048de0d505eb404">CTextureAbstraite</a>.
+</div>
+</div><p>
+<hr><h2>Documentation des champs</h2>
+<a class="anchor" name="46f212c1efd9ee141acd85f47e316d15"></a><!-- doxytag: member="CTexture2D::TextureImage" ref="46f212c1efd9ee141acd85f47e316d15" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Image <a class="el" href="class_c_texture2_d.html#46f212c1efd9ee141acd85f47e316d15">CTexture2D::TextureImage</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+membre privé temporaire servant la conserver les texels lus du fichier 
+<p>
+
+</div>
+</div><p>
+<hr>La documentation de cette classe a été générée à partir des fichiers suivants:<ul>
+<li><a class="el" href="_texture2_d_8h.html">Texture2D.h</a><li><a class="el" href="_texture2_d_8cpp.html">Texture2D.cpp</a></ul>
+<hr size="1"><address style="align: right;"><small>Généré le Wed Sep 17 08:56:44 2008 pour TP3v1 par&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>

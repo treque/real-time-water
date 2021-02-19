@@ -1,0 +1,583 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>TP3v1: Référence de la classe CModele3DAbstrait</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Généré par Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+    <li><a href="modules.html"><span>Modules</span></a></li>
+    <li id="current"><a href="annotated.html"><span>Structures&nbsp;de&nbsp;données</span></a></li>
+    <li><a href="files.html"><span>Fichiers</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>Structures&nbsp;de&nbsp;données</span></a></li>
+    <li><a href="hierarchy.html"><span>Hiérarchie&nbsp;des&nbsp;classes</span></a></li>
+    <li><a href="functions.html"><span>Champs&nbsp;de&nbsp;donnée</span></a></li>
+  </ul></div>
+<h1>Référence de la classe CModele3DAbstrait</h1><!-- doxytag: class="CModele3DAbstrait" --><code>#include &lt;Modele3DAbstrait.h&gt;</code>
+<p>
+Dérivée par <a class="el" href="class_c_carte.html">CCarte</a>, CGazon, et CSkybox.
+<p>
+Graphe d'héritage de CModele3DAbstrait:<p><center><img src="class_c_modele3_d_abstrait__inherit__graph.png" border="0" usemap="#_c_modele3_d_abstrait__inherit__map" alt="Inheritance graph"></center>
+<map name="_c_modele3_d_abstrait__inherit__map">
+<area href="class_c_carte.html" shape="rect" coords="42,80,106,107" alt="">
+</map>
+<center><font size="2">[<a href="graph_legend.html">légende</a>]</font></center><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Fonctions membres publiques</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_modele3_d_abstrait.html#cbd0eff182640edbddc2f7b29e0a0db8">CModele3DAbstrait</a> (float echelle, char *nomFichierTexture, <a class="el" href="_texture_abstraite_8h.html#ab445dba0e8b343b517fab02e1a819b5">TEXTypeEnum</a> texType, bool compilerTex=true, bool mipmap=false)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">constructeur créant un modèle 3D générique comportant une seule texture  <a href="#cbd0eff182640edbddc2f7b29e0a0db8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_modele3_d_abstrait.html#0e92e9c50868b657d81189aec536de24">CModele3DAbstrait</a> (float echelle, std::vector&lt; char * &gt; *nomsFichiersTextures, <a class="el" href="_texture_abstraite_8h.html#ab445dba0e8b343b517fab02e1a819b5">TEXTypeEnum</a> texType, bool compilerTex=true)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">constructeur créant un modèle 3D générique comportant plusieurs textures  <a href="#0e92e9c50868b657d81189aec536de24"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_modele3_d_abstrait.html#dc176714273390b3df9dea775c2c2407">~CModele3DAbstrait</a> (void)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">destructeur par défaut  <a href="#dc176714273390b3df9dea775c2c2407"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_modele3_d_abstrait.html#b583ffd041c5e410245fc0de8d124e8a">afficher</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">fonction à appeler pour commander l'affichage de l'objet (appel de la liste d'affichage)  <a href="#b583ffd041c5e410245fc0de8d124e8a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_modele3_d_abstrait.html#1478ed795a7e483532e8b190ef968cff">ajouterTexture</a> (<a class="el" href="class_c_texture_abstraite.html">CTextureAbstraite</a> *texture)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ajoute une texture spécifique (préconstruite)au modèle  <a href="#1478ed795a7e483532e8b190ef968cff"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_modele3_d_abstrait.html#28a60cb792d90e4f52515b95bdb0d453">obtenirEchelle</a> () const </td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_modele3_d_abstrait.html#ed3dc24d975171740033618ef09e8473">modifierEchelle</a> (float echelle)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">modifie l'échelle du modèle 3D  <a href="#ed3dc24d975171740033618ef09e8473"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">std::vector&lt; <a class="el" href="class_c_texture_abstraite.html">CTextureAbstraite</a> * &gt; *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_modele3_d_abstrait.html#cfde747b79387ea5f1bb666acb566c68">obtenirTextures</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">obtient une référence sur la texture  <a href="#cfde747b79387ea5f1bb666acb566c68"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Fonctions membres protégées</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_modele3_d_abstrait.html#4a365db7c33e83143fe419a90b1c249c">compilerListeAffichage</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Compile la liste d'affichage en fonction de plusieurs conditions de création.  <a href="#4a365db7c33e83143fe419a90b1c249c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_modele3_d_abstrait.html#595d9ad5dfb3529ab6539eeffa5a0028">construire</a> (void(*dessinerFunc)(void), void(*texturerFunc)(void *)=NULL, bool remplacerTexturage=false)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Construit les différentes textures spécifiées et lance la compilation de la liste d'Affichage.  <a href="#595d9ad5dfb3529ab6539eeffa5a0028"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Attributs protégés</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">std::vector&lt; <a class="el" href="class_c_texture_abstraite.html">CTextureAbstraite</a> * &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_modele3_d_abstrait.html#2a4ff65cecaa0dee8bbfd031335f75e7">textures_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">la liste des textures openGL du modèle 3D  <a href="#2a4ff65cecaa0dee8bbfd031335f75e7"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Attributs privés</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_modele3_d_abstrait.html#55bb7e94c12c8c03f5a4b8aa24b20c97">remplacerTexturage_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">indique si le texturage personnalisé doit remplacer le texturage par défaut  <a href="#55bb7e94c12c8c03f5a4b8aa24b20c97"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="_texture_abstraite_8h.html#ab445dba0e8b343b517fab02e1a819b5">TEXTypeEnum</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_modele3_d_abstrait.html#131a121c54f4d9db4434fa3803c86e5a">texType_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">le type de textures associées à l'objet (GL_TEXTURE_2D, GL_TEXTURE_CUBE_MAP, etc...)  <a href="#131a121c54f4d9db4434fa3803c86e5a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">GLuint&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_modele3_d_abstrait.html#2ea3cd138f1b9d7ae9d9712b771119d2">listeAffichage_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">l'identificateur openGL de la liste d'affichage associée au modèle 3D  <a href="#2ea3cd138f1b9d7ae9d9712b771119d2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_modele3_d_abstrait.html#2c52b7c2414e9162ff11b5b1d8bd41e5">echelle_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">facteur d'échelle général appliqué dans la liste d'affichage (glScale) lors de la compilation  <a href="#2c52b7c2414e9162ff11b5b1d8bd41e5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_modele3_d_abstrait.html#8644063ce65af0153bf253603b678762">mipmap_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">doit-on mipmapper ?  <a href="#8644063ce65af0153bf253603b678762"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_modele3_d_abstrait.html#dacbfc95f23c1f0543fbc7c3f0873c6e">compilerTex_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">flag disant si oui ou non les textures seront inclues dans la liste d'Affichage ou non (laissées à la discrétion du l'usager)  <a href="#dacbfc95f23c1f0543fbc7c3f0873c6e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">std::vector&lt; char * &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_modele3_d_abstrait.html#a3eb745c39ca910715189bb14cf47309">nomsFichiersTextures_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">la liste des noms de fichiers des textures  <a href="#a3eb745c39ca910715189bb14cf47309"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>Description détaillée</h2>
+<a class="el" href="class_c_modele3_d_abstrait.html">CModele3DAbstrait</a> Cette classe encapsule tout objet graphique openGL.<p>
+<dl compact><dt><b>Remarques:</b></dt><dd>Pour créer un objet graphique (utilisant une liste d'affichage openGL), on devrait DÉRIVER une classe personnalisé de <a class="el" href="class_c_modele3_d_abstrait.html">CModele3DAbstrait</a>. la fonction protégée "construire" est disponible à toute classe dérivée et doit impérativement être appelée à la construction de la classe dérivée afin de fournir à la classe de base abstraite les pointeurs de fonction sur la fonction d'affichage (au moins) et la fonction de d'application des textures (faccult.). Le graphisme "glBegin...glEnd" devrait donc toujours faire partie de la classe dérivée et être pointée par le pointeur de fonction "dessinerFunc" passé à "construire()".</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-03-11 &lt;TODO: insérer initiales ici&gt; &lt;TODO: insérer le texte ici&gt; </dd></dl>
+
+<p>
+<hr><h2>Documentation des contructeurs et destructeur</h2>
+<a class="anchor" name="cbd0eff182640edbddc2f7b29e0a0db8"></a><!-- doxytag: member="CModele3DAbstrait::CModele3DAbstrait" ref="cbd0eff182640edbddc2f7b29e0a0db8" args="(float echelle, char *nomFichierTexture, TEXTypeEnum texType, bool compilerTex=true, bool mipmap=false)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CModele3DAbstrait::CModele3DAbstrait           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>echelle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>nomFichierTexture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_texture_abstraite_8h.html#ab445dba0e8b343b517fab02e1a819b5">TEXTypeEnum</a>&nbsp;</td>
+          <td class="paramname"> <em>texType</em> = <code>TYPE_TEXTURE2D</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>compilerTex</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>mipmap</em> = <code>false</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+constructeur créant un modèle 3D générique comportant une seule texture 
+<p>
+<a class="el" href="class_c_modele3_d_abstrait.html#cbd0eff182640edbddc2f7b29e0a0db8">CModele3DAbstrait::CModele3DAbstrait</a>(float echelle, char * nomFichierTexture, TEXTypeEnum texType = TYPE_TEXTURE2D, bool compilerTex = true) Construit un modèle 3D openGL générique au et ne comportant qu'une seule texture interne<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-02-20 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="0e92e9c50868b657d81189aec536de24"></a><!-- doxytag: member="CModele3DAbstrait::CModele3DAbstrait" ref="0e92e9c50868b657d81189aec536de24" args="(float echelle, std::vector&lt; char * &gt; *nomsFichiersTextures, TEXTypeEnum texType, bool compilerTex=true)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CModele3DAbstrait::CModele3DAbstrait           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>echelle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; char * &gt; *&nbsp;</td>
+          <td class="paramname"> <em>nomsFichiersTextures</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_texture_abstraite_8h.html#ab445dba0e8b343b517fab02e1a819b5">TEXTypeEnum</a>&nbsp;</td>
+          <td class="paramname"> <em>texType</em> = <code>TYPE_TEXTURE2D</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>compilerTex</em> = <code>true</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+constructeur créant un modèle 3D générique comportant plusieurs textures 
+<p>
+<a class="el" href="class_c_modele3_d_abstrait.html#cbd0eff182640edbddc2f7b29e0a0db8">CModele3DAbstrait::CModele3DAbstrait</a>(float echelle, std::vector&lt;char*&gt; *nomsFichiersTextures, TEXTypeEnum texType = TYPE_TEXTURE2D, bool compilerTex = true) Construit un modèle 3D openGL générique et comportant plusieurs textures spécifiques dans un std::vecteur.<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-02-20 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="dc176714273390b3df9dea775c2c2407"></a><!-- doxytag: member="CModele3DAbstrait::~CModele3DAbstrait" ref="dc176714273390b3df9dea775c2c2407" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CModele3DAbstrait::~CModele3DAbstrait           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+destructeur par défaut 
+<p>
+public destructor ~CModele3DAbstrait <br>
+ Destructeur par défaut<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-02-20 </dd></dl>
+
+</div>
+</div><p>
+<hr><h2>Documentation des fonctions membres</h2>
+<a class="anchor" name="b583ffd041c5e410245fc0de8d124e8a"></a><!-- doxytag: member="CModele3DAbstrait::afficher" ref="b583ffd041c5e410245fc0de8d124e8a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CModele3DAbstrait::afficher           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+fonction à appeler pour commander l'affichage de l'objet (appel de la liste d'affichage) 
+<p>
+public afficher <br>
+ Fonction publique appelée par l'utilisateur d'un modèle 3D spécifique pour afficher l'objet. Appelle simplement la liste d'affichage résidente.<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-02-20 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="1478ed795a7e483532e8b190ef968cff"></a><!-- doxytag: member="CModele3DAbstrait::ajouterTexture" ref="1478ed795a7e483532e8b190ef968cff" args="(CTextureAbstraite *texture)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CModele3DAbstrait::ajouterTexture           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_texture_abstraite.html">CTextureAbstraite</a> *&nbsp;</td>
+          <td class="paramname"> <em>texture</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+ajoute une texture spécifique (préconstruite)au modèle 
+<p>
+public ajouterTexture <br>
+ Ajoute une texture spécifique (préconstruite) a l'ensemble des textures du modèle.<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in,out]</tt>&nbsp;</td><td valign="top"><em>texture</em>&nbsp;</td><td><a class="el" href="class_c_texture_abstraite.html">CTextureAbstraite</a> * le pointeur sur la texture abstraite.</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-03-09 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="4a365db7c33e83143fe419a90b1c249c"></a><!-- doxytag: member="CModele3DAbstrait::compilerListeAffichage" ref="4a365db7c33e83143fe419a90b1c249c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CModele3DAbstrait::compilerListeAffichage           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Compile la liste d'affichage en fonction de plusieurs conditions de création. 
+<p>
+protected virtual compilerListeAffichage <br>
+ compile la liste d'affichage résidente. À noter que les textures spécifiées à l'interne ne sont pas forcément incluses dans la liste. (voir "compilerTex_"<p>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-02-20n </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="595d9ad5dfb3529ab6539eeffa5a0028"></a><!-- doxytag: member="CModele3DAbstrait::construire" ref="595d9ad5dfb3529ab6539eeffa5a0028" args="(void(*dessinerFunc)(void), void(*texturerFunc)(void *)=NULL, bool remplacerTexturage=false)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CModele3DAbstrait::construire           </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(void)&nbsp;</td>
+          <td class="paramname"> <em>dessinerFunc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(void *)&nbsp;</td>
+          <td class="paramname"> <em>texturerFunc</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>remplacerTexturage</em> = <code>false</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Construit les différentes textures spécifiées et lance la compilation de la liste d'Affichage. 
+<p>
+protected virtual construire <br>
+ Fonction appelée par le constructeur d'un modèle3D spécialisé (dérivé) pour construire les textures associées et lancer la compilation de la liste d'affichage.<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>dessinerFunc</em>&nbsp;</td><td>void (*)(void) le pointeur de fonction pointant sur dessiner. </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>texturerFunc</em>&nbsp;</td><td>void (*)(void) [=0] le pointeur de fonction pointant sur appliquerTextures </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>remplacerTexturage</em>&nbsp;</td><td>indique si la fonction de texturage fournie doit remplacer le texturage par défaut. Sinon, il sera appelé ensuite.</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>Aucune</dd></dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-02-20 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="ed3dc24d975171740033618ef09e8473"></a><!-- doxytag: member="CModele3DAbstrait::modifierEchelle" ref="ed3dc24d975171740033618ef09e8473" args="(float echelle)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CModele3DAbstrait::modifierEchelle           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>echelle</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+modifie l'échelle du modèle 3D 
+<p>
+inline public modifierEchelle <br>
+<p>
+modifie l'échelle du modèle 3D<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>echelle</em>&nbsp;</td><td>float la nouvelle échelle du modèle 3D</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-02-18 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="28a60cb792d90e4f52515b95bdb0d453"></a><!-- doxytag: member="CModele3DAbstrait::obtenirEchelle" ref="28a60cb792d90e4f52515b95bdb0d453" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CModele3DAbstrait::obtenirEchelle           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+obtient l'échelle du modèle 3D 
+</div>
+</div><p>
+<a class="anchor" name="cfde747b79387ea5f1bb666acb566c68"></a><!-- doxytag: member="CModele3DAbstrait::obtenirTextures" ref="cfde747b79387ea5f1bb666acb566c68" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="class_c_texture_abstraite.html">CTextureAbstraite</a> * &gt; * CModele3DAbstrait::obtenirTextures           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+obtient une référence sur la texture 
+<p>
+inline public constant obtenirTextures <br>
+<p>
+obtient une référence sur la te du modèle<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>Aucun</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Auteur:</b></dt><dd>Frédéric Plourde </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2008-02-18 </dd></dl>
+
+</div>
+</div><p>
+<hr><h2>Documentation des champs</h2>
+<a class="anchor" name="dacbfc95f23c1f0543fbc7c3f0873c6e"></a><!-- doxytag: member="CModele3DAbstrait::compilerTex_" ref="dacbfc95f23c1f0543fbc7c3f0873c6e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_c_modele3_d_abstrait.html#dacbfc95f23c1f0543fbc7c3f0873c6e">CModele3DAbstrait::compilerTex_</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+flag disant si oui ou non les textures seront inclues dans la liste d'Affichage ou non (laissées à la discrétion du l'usager) 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="2c52b7c2414e9162ff11b5b1d8bd41e5"></a><!-- doxytag: member="CModele3DAbstrait::echelle_" ref="2c52b7c2414e9162ff11b5b1d8bd41e5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_c_modele3_d_abstrait.html#2c52b7c2414e9162ff11b5b1d8bd41e5">CModele3DAbstrait::echelle_</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+facteur d'échelle général appliqué dans la liste d'affichage (glScale) lors de la compilation 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="2ea3cd138f1b9d7ae9d9712b771119d2"></a><!-- doxytag: member="CModele3DAbstrait::listeAffichage_" ref="2ea3cd138f1b9d7ae9d9712b771119d2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint <a class="el" href="class_c_modele3_d_abstrait.html#2ea3cd138f1b9d7ae9d9712b771119d2">CModele3DAbstrait::listeAffichage_</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+l'identificateur openGL de la liste d'affichage associée au modèle 3D 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="8644063ce65af0153bf253603b678762"></a><!-- doxytag: member="CModele3DAbstrait::mipmap_" ref="8644063ce65af0153bf253603b678762" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_c_modele3_d_abstrait.html#8644063ce65af0153bf253603b678762">CModele3DAbstrait::mipmap_</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+doit-on mipmapper ? 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="a3eb745c39ca910715189bb14cf47309"></a><!-- doxytag: member="CModele3DAbstrait::nomsFichiersTextures_" ref="a3eb745c39ca910715189bb14cf47309" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;char*&gt; <a class="el" href="class_c_modele3_d_abstrait.html#a3eb745c39ca910715189bb14cf47309">CModele3DAbstrait::nomsFichiersTextures_</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+la liste des noms de fichiers des textures 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="55bb7e94c12c8c03f5a4b8aa24b20c97"></a><!-- doxytag: member="CModele3DAbstrait::remplacerTexturage_" ref="55bb7e94c12c8c03f5a4b8aa24b20c97" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_c_modele3_d_abstrait.html#55bb7e94c12c8c03f5a4b8aa24b20c97">CModele3DAbstrait::remplacerTexturage_</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+indique si le texturage personnalisé doit remplacer le texturage par défaut 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="2a4ff65cecaa0dee8bbfd031335f75e7"></a><!-- doxytag: member="CModele3DAbstrait::textures_" ref="2a4ff65cecaa0dee8bbfd031335f75e7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="class_c_texture_abstraite.html">CTextureAbstraite</a>*&gt; <a class="el" href="class_c_modele3_d_abstrait.html#2a4ff65cecaa0dee8bbfd031335f75e7">CModele3DAbstrait::textures_</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+la liste des textures openGL du modèle 3D 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="131a121c54f4d9db4434fa3803c86e5a"></a><!-- doxytag: member="CModele3DAbstrait::texType_" ref="131a121c54f4d9db4434fa3803c86e5a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_texture_abstraite_8h.html#ab445dba0e8b343b517fab02e1a819b5">TEXTypeEnum</a> <a class="el" href="class_c_modele3_d_abstrait.html#131a121c54f4d9db4434fa3803c86e5a">CModele3DAbstrait::texType_</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+le type de textures associées à l'objet (GL_TEXTURE_2D, GL_TEXTURE_CUBE_MAP, etc...) 
+<p>
+
+</div>
+</div><p>
+<hr>La documentation de cette classe a été générée à partir des fichiers suivants:<ul>
+<li><a class="el" href="_modele3_d_abstrait_8h.html">Modele3DAbstrait.h</a><li><a class="el" href="_modele3_d_abstrait_8cpp.html">Modele3DAbstrait.cpp</a></ul>
+<hr size="1"><address style="align: right;"><small>Généré le Wed Sep 17 08:56:44 2008 pour TP3v1 par&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>

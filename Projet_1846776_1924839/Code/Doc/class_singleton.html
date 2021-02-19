@@ -1,0 +1,190 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>TP3v1: Référence de la classe Singleton&lt; T &gt; (modèle)</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Généré par Doxygen 1.4.7 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+    <li><a href="modules.html"><span>Modules</span></a></li>
+    <li id="current"><a href="annotated.html"><span>Structures&nbsp;de&nbsp;données</span></a></li>
+    <li><a href="files.html"><span>Fichiers</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>Structures&nbsp;de&nbsp;données</span></a></li>
+    <li><a href="hierarchy.html"><span>Hiérarchie&nbsp;des&nbsp;classes</span></a></li>
+    <li><a href="functions.html"><span>Champs&nbsp;de&nbsp;donnée</span></a></li>
+  </ul></div>
+<h1>Référence de la classe Singleton&lt; T &gt; (modèle)<br>
+<small>
+[<a class="el" href="group__utilitaire.html">Utilitaire</a>,&nbsp;<a class="el" href="group__utilitaire.html">Utilitaire</a>]</small>
+</h1><!-- doxytag: class="Singleton" -->Cette classe représente une base générique pour la déclaration de singleton.  
+<a href="#_details">Plus de détails...</a>
+<p>
+<code>#include &lt;Singleton.h&gt;</code>
+<p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Fonctions membres publiques statiques</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static T *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utilitaire.html#g349c289d77c484b8b4a180843d968b46">obtenirInstance</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Obtient l'instance unique de la classe.  <a href="group__utilitaire.html#g349c289d77c484b8b4a180843d968b46"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utilitaire.html#g2b9ae943a004663d769be3f08ae35a0f">libererInstance</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Libère l'instance unique de la classe.  <a href="group__utilitaire.html#g2b9ae943a004663d769be3f08ae35a0f"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Fonctions membres protégées</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_singleton.html#923b995920da9c06590adb170ab2f890">Singleton</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur vide déclaré protected.  <a href="#923b995920da9c06590adb170ab2f890"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_singleton.html#c6e7af82cba33f561bd64e5e0243e7f8">~Singleton</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructeur vide déclaré protected.  <a href="#c6e7af82cba33f561bd64e5e0243e7f8"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Fonctions membres privées</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_singleton.html#363d3f7d5276e6ee74966d9606df2086">Singleton</a> (const <a class="el" href="class_singleton.html">Singleton</a> &amp;)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur par copie déclaré mais non défini.  <a href="#363d3f7d5276e6ee74966d9606df2086"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_singleton.html">Singleton</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_singleton.html#90761b9486d76162ab59c871b5cc030f">operator=</a> (const <a class="el" href="class_singleton.html">Singleton</a> &amp;)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Opérateur d'assignation déclaré mais non défini.  <a href="#90761b9486d76162ab59c871b5cc030f"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Attributs privés statiques</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">static T *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_singleton.html#4c69b25a6e5ae736a66b69bb5eafd966">instance_</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Instance unique de la classe.  <a href="#4c69b25a6e5ae736a66b69bb5eafd966"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>Description détaillée</h2>
+<h3>template&lt;class T&gt;<br>
+ class Singleton&lt; T &gt;</h3>
+
+Cette classe représente une base générique pour la déclaration de singleton. 
+<p>
+Les singletons qui dériveront de cette classe générique et qui utiliseront les macros appropriées auront déjà les parties communes à pratiquement tous les singletons, soit la gestion de l'instance unique.<p>
+<dl compact><dt><b>Auteur:</b></dt><dd>Martin Bisson </dd></dl>
+<dl compact><dt><b>Date:</b></dt><dd>2007-03-11 </dd></dl>
+
+<p>
+<hr><h2>Documentation des contructeurs et destructeur</h2>
+<a class="anchor" name="923b995920da9c06590adb170ab2f890"></a><!-- doxytag: member="Singleton::Singleton" ref="923b995920da9c06590adb170ab2f890" args="()" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_singleton.html">Singleton</a>&lt; T &gt;::<a class="el" href="class_singleton.html">Singleton</a>           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [inline, protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Constructeur vide déclaré protected. 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="c6e7af82cba33f561bd64e5e0243e7f8"></a><!-- doxytag: member="Singleton::~Singleton" ref="c6e7af82cba33f561bd64e5e0243e7f8" args="()" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_singleton.html">Singleton</a>&lt; T &gt;::~<a class="el" href="class_singleton.html">Singleton</a>           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [inline, protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Destructeur vide déclaré protected. 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="363d3f7d5276e6ee74966d9606df2086"></a><!-- doxytag: member="Singleton::Singleton" ref="363d3f7d5276e6ee74966d9606df2086" args="(const Singleton &amp;)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_singleton.html">Singleton</a>&lt; T &gt;::<a class="el" href="class_singleton.html">Singleton</a>           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_singleton.html">Singleton</a>&lt; T &gt; &amp;&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Constructeur par copie déclaré mais non défini. 
+<p>
+
+</div>
+</div><p>
+<hr><h2>Documentation des fonctions membres</h2>
+<a class="anchor" name="90761b9486d76162ab59c871b5cc030f"></a><!-- doxytag: member="Singleton::operator=" ref="90761b9486d76162ab59c871b5cc030f" args="(const Singleton &amp;)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_singleton.html">Singleton</a>&amp; <a class="el" href="class_singleton.html">Singleton</a>&lt; T &gt;::operator=           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_singleton.html">Singleton</a>&lt; T &gt; &amp;&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Opérateur d'assignation déclaré mais non défini. 
+<p>
+
+</div>
+</div><p>
+<hr><h2>Documentation des champs</h2>
+<a class="anchor" name="4c69b25a6e5ae736a66b69bb5eafd966"></a><!-- doxytag: member="Singleton::instance_" ref="4c69b25a6e5ae736a66b69bb5eafd966" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T* <a class="el" href="class_singleton.html">Singleton</a>&lt; T &gt;::<a class="el" href="class_singleton.html#4c69b25a6e5ae736a66b69bb5eafd966">instance_</a><code> [static, private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Instance unique de la classe. 
+<p>
+
+</div>
+</div><p>
+<hr>La documentation de cette classe a été générée à partir du fichier suivant:<ul>
+<li><a class="el" href="_singleton_8h.html">Singleton.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Généré le Wed Sep 17 08:56:45 2008 pour TP3v1 par&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
+</body>
+</html>
